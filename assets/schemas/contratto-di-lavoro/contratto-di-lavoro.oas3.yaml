@@ -42,7 +42,7 @@ components:
         numero_ore_settimanali: numeroOreSettimanali
         numero_settimane_preavviso: numeroSettimanePreavviso
         ha_organizzazione_assistenza:
-          "@id": OrganizzazioneDiAssistenza
+          "@id": haOrganizzazioneDiAssistenza
       additionalProperties: true
       description:
          Questo schema rappresenta un contratto di lavoro, o lettera di assunzione. È un accordo che da origine ad un rapporto di lavoro tra un datore di lavoro e un lavoratore.
