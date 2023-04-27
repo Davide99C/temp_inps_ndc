@@ -8,8 +8,8 @@ info:
     url: https://creativecommons.org/licenses/by/4.0/
   termsOfService: https://creativecommons.org/licenses/by/4.0/
   contact:
-    name: Eugenia Alessio
-    email: e.alessio@almawave.it
+    name: Andrea Cigliano
+    email: andrea.cigliano@inps.it
   description: |-
    L'Ordine di Pagamento è la materializzazione di un Pagamento eseguito tramite un Servizio Di Pagamento erogato da un PSP (Prestatore Servizi Pagamento).
    È legato univocamente alle transazioni di denaro che addebitano e accreditano la somma di denaro trasferita tramite l'ordine di pagamento.

@@ -8,8 +8,8 @@ info:
     url: https://creativecommons.org/licenses/by/4.0/
   termsOfService: https://creativecommons.org/licenses/by/4.0/
   contact:
-    name: Eugenia Alessio
-    email: e.alessio@almawave.it
+    name: Andrea Cigliano
+    email: andrea.cigliano@inps.it
   description: |-
    Esprime l'esito dell'unico pagamento a cui è associato.
    L'esito di un pagamento può non essere immediatamente noto poichè l'esecuzione del pagamento può coinvolgere diversi intermediari che potrebbero non comunicare in tempo reale l'effettivo buon fine dell'operazione a loro carico.
