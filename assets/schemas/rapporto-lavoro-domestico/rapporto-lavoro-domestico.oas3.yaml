@@ -43,6 +43,7 @@ components:
       x-jsonld-context:
         "@vocab": "https://w3id.org/italia/onto/OP21/"
         codice_rapporto_lavoro: codiceRapportoDiLavoro
+        data_deposito_contratto: dataDepositoContratto
         ha_lavoratore_domestico:
           "@id": haLavoratoreDomestico
         ha_datore_di_lavoro:
@@ -58,6 +59,10 @@ components:
       properties:
         codice_rapporto_lavoro:
           $ref: "#/components/schemas/IdRapportoLavoroDomestico"
+        data_deposito_contratto:
+          type: string
+          format: date
+          pattern: ([0-9]{4})-([0-1][0-9])-([0-3][0-9])
         ha_lavoratore_domestico:
           type: object
           items:
@@ -72,6 +77,7 @@ components:
             $ref: "#/components/schemas/ContrattoLavoro"
       example:
         codice_rapporto_lavoro: '789431'
+        data_deposito_contratto: '2023-02-16'
         ha_lavoratore_domestico:
           $ref: "https://raw.githubusercontent.com/Davide99C/temp_inps_ndc/main/assets/schemas/lavoratore-domestico/lavoratore-domestico.oas3.yaml#/components/schemas/LavoratoreDomestico/example"
         ha_datore_di_lavoro:

@@ -124,6 +124,8 @@ components:
         data_movimento: dataMovimento
         invia_ricevuta_movimento:
           "@id": inviaRicevutaDiMovimento
+        movimento_agisce_su:
+          "@id": movimentoAgisceSu
       additionalProperties: true
       description:
           Questo schema rappresenta il movimento di una somma di denaro indotto da un Ordine Di Pagamento su un Conto Corrente.
@@ -156,6 +158,10 @@ components:
           type: object
           items:
             $ref: "#/components/schemas/RicevutaDiMovimento"
+        movimento_agisce_su:
+          type: object
+          items:
+            $ref: "#/components/schemas/ContoCorrente"
       example:
         id_movimento: '154864'
         causale_movimento: 'Pagamento'
@@ -165,6 +171,8 @@ components:
         invia_ricevuta_movimento:
           id_ricevuta_accredito: '123546'
           data_ricevuta: '2022-07-25'
+        movimento_agisce_su:
+          iban: 'IT 99 C 12345 67890 123456789012'
 
     RicevutaDiMovimento:
       type: object
@@ -191,4 +199,23 @@ components:
       example:
         id_ricevuta_accredito: '123546'
         data_ricevuta: '2022-07-25'
+
+    ContoCorrente:
+      type: object
+      x-jsonld-type: https://w3id.org/italia/onto/OP21/ContoCorrente
+      x-jsonld-context:
+        "@vocab": "https://w3id.org/italia/onto/OP21/"
+        iban: IBAN
+      additionalProperties: true
+      description:
+          Conto finanziario gestito da una banca o altro istituto finanziario in cui sono registrate le transazioni finanziarie tra la banca e un cliente, il titolare del conto.
+          Lo schema è associato a https://w3id.org/italia/onto/OP21/ContoCorrente.
+      required:
+      - iban
+      properties:
+        iban:
+          type: string
+          maxLength: 50
+      example:
+        iban: 'IT 99 C 12345 67890 123456789012'
 

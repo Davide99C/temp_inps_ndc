@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Schema dell' Esito del Pagamento
+  title: Schema dell'Esito del Pagamento
   version: 202301.10.00
   x-summary: Schema dell'Esito di un Pagamento compatibile con l'Ontologia INPS relativa a Riscatti, Ricongiunzioni, Rendite e Lavoratore Domestico.
   license:
