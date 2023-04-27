@@ -64,29 +64,8 @@ components:
           data_pagamento: '2022-06-25'
           ha_notifica_pagamento:
             codice_mav: 01234567890123456
-          attiva_ordine_pagamento:
-            codice_ordine_pagamento: '987654321'
-            data_ordine_pagamento: '2022-06-30'
-            utilizza_servizio_pagamento:
-              id_servizio_pagamento: '16986'
-            esegue_accredito:
-              id_movimento: '154864'
-              causale_movimento: 'Pagamento'
-              importo_movimento: 500.50
-              importo_commissione_movimento: 2.50
-              data_movimento: '2022-07-14'
-              invia_ricevuta_movimento:
-                id_ricevuta_accredito: '123546'
-                data_ricevuta: '2022-07-25'
-            esegue_addebito:
-              id_movimento: '54864'
-              causale_movimento: 'Pagamento'
-              importo_movimento: 500.50
-              importo_commissione_movimento: 2.50
-              data_movimento: '2022-07-14'
-              invia_ricevuta_movimento:
-                id_ricevuta_accredito: '123546'
-                data_ricevuta: '2022-07-25'
+            attiva_ordine_pagamento:
+               $ref: "https://raw.githubusercontent.com/Davide99C/temp_inps_ndc/main/assets/schemas/ordine-pagamento/ordine-pagamento.oas3.yaml#/components/schemas/OrdinePagamento/example"
 
     Pagamento:
       type: object
