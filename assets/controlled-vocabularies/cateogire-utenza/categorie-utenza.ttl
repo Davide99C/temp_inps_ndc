@@ -1,0 +1,663 @@
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix sinpson:      <https://dati.inps.it/sinpson/> .
+@prefix inpsvoc:      <https://dati.inps.it/sinpson/vocabolari/> .
+@prefix catut:        <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "Classification of user categories adopted by INPS controlled vocabulary"@en ;	  
+      dct:description ""@it , 
+	                  ""@en ;	  	  
+      rdfs:comment ""@it, 
+	               ""@en ;
+      rdfs:label "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the controlled vocabulary of the classification of user categories adopted by INPS controlled vocabulary"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "2" ;
+	  ndc:keyConcept "categorie_utenza" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://dati.inps.it/sinpson/vocabolari/categorie_utenza" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+      dct:subject <http://eurovoc.europa.eu/100212>, <http://eurovoc.europa.eu/100236> ; 
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/> ;
+      dcat:keyword "utente"@it, "ente"@it , "azienda"@it , "lavoratore"@it , "intermediario"@it , "medico"@it , "pensionato"@it , "disoccupato"@it, "user"@en ,  "organization"@en , "company"@en ,  "worker"@en ,  "intermediary"@en , "doctor"@en , "pensioner"@en , "unemployed"@en  ; 
+      dct:issued "2022-01-10"^^xsd:date ;
+      dct:modified "2023-03-27"^^xsd:date ;
+      owl:versionInfo "0.4" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:publisher <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:relation <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ; 
+      dct:rightsHolder <https://dati.inps.it/sinpson/organization/inps> ;
+      dcat:contactPoint <https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://dati.inps.it/sinpson/distribution/CATUT_RDF_TURTLE>, <https://dati.inps.it/sinpson/distribution/CATUT_JSON_LD>, <https://dati.inps.it/sinpson/distribution/CATUT_CSV>;
+      skos:hasTopConcept <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/banca_intermediario_finanziario>, 
+	                     <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/disoccupato>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/ente_erogatore_prestazioni_previdenziali>,
+						 <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti>, 
+						 <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_migrante>, 
+						 <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_asl>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato>,
+                         <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> .
+						 
+#######################################################################################################
+#                                   INPS and standard                                                 #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://dati.inps.it/sinpson/distribution/CATUT_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it, "RDF/Turtle distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it, "This is the distribution in RDF/turtle of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ;  
+      dcat:accessURL <https://github.com/......> .	  
+	  
+<https://dati.inps.it/sinpson/distribution/CATUT_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "JSON_LD distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the distribution in JSON_LD of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> . 
+
+<https://dati.inps.it/sinpson/distribution/CATUT_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "CSV distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the distribution in CSV of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> .		  
+
+<https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/datore_lavoro_domestico>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pubblica_amministrazione>, 
+			        <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda_agricola>, 
+					<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/impresa_edile>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda_settore_marittimo_volo> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Aziende, enti e datori di lavoro"@it ;
+      skos:prefLabel "Aziende, enti e datori di lavoro"@it .
+	  
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/banca_intermediario_finanziario>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Banca e intermediario finanziario"@it ;
+      skos:prefLabel "Banca e intermediario finanziario"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/disoccupato>
+a   skos:Concept ;
+      skos:altLabel "Lavoratore sospeso"@it , "Inoccupato"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Disoccupato"@it ;
+      skos:prefLabel "Disoccupato"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/ente_erogatore_prestazioni_previdenziali>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ente erogatore di prestazioni previdenziali, consolato e altra autorità locale"@it ;
+      skos:prefLabel "Ente erogatore di prestazioni previdenziali, consolato e altra autorità locale"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/genitore>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/figlio_e_studente>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/familiare_superstite>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/anziano> ;
+      skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;		
+      rdfs:label "Famiglia"@it ;
+      skos:prefLabel "Famiglia"@it .	  
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/patronato>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/consulente_lavoro>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/caf>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/associazione_categoria> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Intermediari e consulenti"@it ;
+      skos:prefLabel "Intermediari e consulenti"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_domestico>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_marittimo_pescatore_settore_volo>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/sportivo>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/artigiano_commerciante>, 
+				    <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/artista_musicista_scrittore_lavoratore_spettacolo>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dipendente_privato>, 
+				    <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/ministro_culto>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/agricolo>, 
+				    <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dipendente_pubblico>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dirigente_aziendale_e_industriale>, 
+				    <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_iscritto_alla_gestione_separata>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/casalinga_e_casalingo> ;
+      skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoratore"@it ;
+	  skos:prefLabel "Lavoratore"@it .
+	  
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_migrante>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/cittadino_straniero_italia>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_paese_UE>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_paese_extra_UE> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;		
+	  rdfs:label "Lavoratore migrante"@it ;
+      skos:prefLabel "Lavoratore migrante"@it .		  
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_asl>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_curante_certificatore>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/asl> ;
+      skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Medici e ASL"@it ;
+	  skos:prefLabel "Medici e ASL"@it .	
+	  
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato_che_vive_in_italia>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato_che_vive_all_estero> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pensionato"@it ;
+      skos:prefLabel "Pensionato"@it .	  
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_con_malattia>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/sordo>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/invalido>, <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/disabile>, 
+				    <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/cieco> ;
+      skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Persone con disabilità e invalidità"@it ;
+	  skos:prefLabel "Persone con disabilità e invalidità"@it .
+
+#######################################################################################################
+#                                              Second level                                           #
+####################################################################################################### 	  
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/agricolo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Agricolo"@it ;
+      skos:prefLabel "Agricolo"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/anziano>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Anziano"@it ;
+      skos:prefLabel "Anziano"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/artigiano_commerciante>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Artigiano e commerciante"@it ;
+      skos:prefLabel "Artigiano e commerciante"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/artista_musicista_scrittore_lavoratore_spettacolo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Artista, musicista, scrittore e lavoratore dello spettacolo"@it ;
+      skos:prefLabel "Artista, musicista, scrittore e lavoratore dello spettacolo"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/asl>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_asl> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "ASL"@it ;
+      skos:prefLabel "ASL"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/associazione_categoria>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Associazione di categoria e sindacato"@it ;
+      skos:prefLabel "Associazione di categoria e sindacato"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda"@it ;
+      skos:prefLabel "Azienda"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda_agricola>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda agricola"@it ;
+      skos:prefLabel "Azienda agricola"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/azienda_settore_marittimo_volo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda del settore marittimo e volo"@it ;
+      skos:prefLabel "Azienda del settore marittimo e volo"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/caf>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "CAF"@it ;
+      skos:prefLabel "CAF"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/casalinga_e_casalingo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Casalinga e casalingo"@it ;
+      skos:prefLabel "Casalinga e casalingo"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/cieco>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Cieco"@it ;
+      skos:prefLabel "Cieco"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/cittadino_straniero_italia>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_migrante> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Cittadino straniero in Italia"@it ;
+      skos:prefLabel "Cittadino straniero in Italia"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/consulente_lavoro>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Consulente del lavoro e professionista"@it ;
+      skos:prefLabel "Consulente del lavoro e professionista"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/datore_lavoro_domestico>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Datore di lavoro domestico"@it ;
+      skos:prefLabel "Datore di lavoro domestico"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dipendente_privato>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dipendente privato"@it ;
+      skos:prefLabel "Dipendente privato"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dipendente_pubblico>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dipendente pubblico"@it ;
+      skos:prefLabel "Dipendente pubblico"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/dirigente_aziendale_e_industriale>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dirigente aziendale e industriale"@it ;
+      skos:prefLabel "Dirigente aziendale e industriale"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/disabile>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Disabile"@it ;
+      skos:prefLabel "Disabile"@it .				
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/familiare_superstite>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Familiare superstite"@it ;
+      skos:prefLabel "Familiare superstite"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/figlio_e_studente>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Figlio e studente"@it ;
+      skos:prefLabel "Figlio e studente"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/genitore>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/famiglia> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Genitore"@it ;
+      skos:prefLabel "Genitore"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/impresa_edile>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Impresa edile"@it ;
+      skos:prefLabel "Impresa edile"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/invalido>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Invalido"@it ;
+      skos:prefLabel "Invalido"@it .			
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_domestico>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore domestico"@it ;
+      skos:prefLabel "Lavoratore domestico"@it .			
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_iscritto_alla_gestione_separata>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore iscritto alla Gestione Separata"@it ;
+      skos:prefLabel "Lavoratore iscritto alla Gestione Separata"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_marittimo_pescatore_settore_volo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore marittimo, pescatore e settore volo"@it ;
+      skos:prefLabel "Lavoratore marittimo, pescatore e settore volo"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_paese_extra_UE>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_migrante> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore in Paese extra UE convenzionato"@it ;
+      skos:prefLabel "Lavoratore in Paese extra UE convenzionato"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_paese_UE>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore_migrante> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore in Paese UE"@it ;
+      skos:prefLabel "Lavoratore in Paese UE"@it .		
+	
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_curante_certificatore>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/medico_asl> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Medico curante e certificatore"@it ;
+      skos:prefLabel "Medico curante e certificatore"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/ministro_culto>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Ministro di culto"@it ;
+      skos:prefLabel "Ministro di culto"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/patronato>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/intermediari_consulenti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Patronato"@it ;
+      skos:prefLabel "Patronato"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato_che_vive_all_estero>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pensionato che vive all'estero"@it ;
+      skos:prefLabel "Pensionato che vive all'estero"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato_che_vive_in_italia>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pensionato> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pensionato che vive in Italia"@it ;
+      skos:prefLabel "Pensionato che vive in Italia"@it .			
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_con_malattia>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Persona con malattia e difficoltà di salute"@it ;
+      skos:prefLabel "Persona con malattia e difficoltà di salute"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/pubblica_amministrazione>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/aziende_enti_datori_lavoro> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pubblica amministrazione"@it ;
+      skos:prefLabel "Pubblica amministrazione"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/sordo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/persona_disabilita_invalidita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sordo"@it ;
+      skos:prefLabel "Sordo"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_utenza/sportivo>
+a   skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;
+	  skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_utenza/lavoratore> ;
+	  skos:notation "" ;
+      dct:identifier "" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sportivo"@it ;
+      skos:prefLabel "Sportivo"@it .	

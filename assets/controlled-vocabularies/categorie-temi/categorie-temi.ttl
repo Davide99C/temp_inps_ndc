@@ -1,0 +1,863 @@
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix sinpson:      <https://dati.inps.it/sinpson/> .
+@prefix inpsvoc:      <https://dati.inps.it/sinpson/vocabolari/> .
+@prefix cattem:       <https://dati.inps.it/sinpson/vocabolari/temi/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://dati.inps.it/sinpson/vocabolari/temi>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sulla classificazione dei temi adottata dall'INPS"@it , "Classification of themes adopted by INPS controlled vocabulary"@en ;	  
+      dct:description ""@it , 
+	                  ""@en ;	  	  
+      rdfs:comment ""@it, 
+	               ""@en ;
+      rdfs:label "Vocabolario Controllato sulla classificazione dei temi adottata dall'INPS"@it , "This is the controlled vocabulary of the classification of themes adopted by INPS controlled vocabulary"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sulla classificazione dei temi adottata dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "2" ;
+	  ndc:keyConcept "temi" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://dati.inps.it/sinpson/vocabolari/temi" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+      dct:subject <http://eurovoc.europa.eu/4543>, <http://eurovoc.europa.eu/100234>, <http://eurovoc.europa.eu/3659>, <http://eurovoc.europa.eu/100189>, 
+	              <http://eurovoc.europa.eu/5974>, <http://eurovoc.europa.eu/100232>, <http://eurovoc.europa.eu/1334>  ;
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://dati.inps.it/sinpson/vocabolari/temi/> ;
+      dcat:keyword "lavoro"@it, "indennità"@it , "disabilità"@it , "pensione"@it , "reddito"@it , "contributo"@it , "work"@en ,  "indemnity"@en , "disability"@en ,  "pension"@en ,  "income"@en , "contribution"@en ;
+      dct:issued "2022-01-10"^^xsd:date ;
+      dct:modified "2023-03-27"^^xsd:date ;
+      owl:versionInfo "0.4" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:publisher <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:relation <https://dati.inps.it/sinpson/vocabolari/categorie_modulo> ;   
+      dct:rightsHolder <https://dati.inps.it/sinpson/organization/inps> ;
+      dcat:contactPoint <https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://dati.inps.it/sinpson/distribution/CATTEM_RDF_TURTLE>, <https://dati.inps.it/sinpson/distribution/CATTEM_JSON_LD>, <https://dati.inps.it/sinpson/distribution/CATTEM_CSV>;
+      skos:hasTopConcept <https://dati.inps.it/sinpson/vocabolari/temi/adempimenti_fiscali>, <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni>,
+	                     <https://dati.inps.it/sinpson/vocabolari/temi/banche_dati_ed_elenchi_di_lavoratori>, <https://dati.inps.it/sinpson/vocabolari/temi/contributi>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/deleghe_e_moduli>, <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita>, 
+						 <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori>, <https://dati.inps.it/sinpson/vocabolari/temi/indennita_speciali_per_lavori_faticosi_o_rischiosi_volontariato_e_donazione_di_sangue_e_midollo>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/iscrizione_a_fondi_e_gestioni_di_categoria>, <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_domestico>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_migrante>, <https://dati.inps.it/sinpson/vocabolari/temi/malattia_assistenza_cure_soggiorni>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/maternita_paternita_congedi_matrimoniali>, <https://dati.inps.it/sinpson/vocabolari/temi/pensioni>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/portali_e_altri_strumenti_specialistici>, <https://dati.inps.it/sinpson/vocabolari/temi/previdenza_complementare>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/redditi_e_patrimonio>, <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni>,
+						 <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio>, <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_ai_superstiti>.
+						 
+#######################################################################################################
+#                                   INPS and standard                                                 #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://dati.inps.it/sinpson/distribution/CATTEM_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it, "RDF/Turtle distribution of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it, "This is the distribution in RDF/turtle of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ;  
+      dcat:accessURL <https://github.com/......> .	  
+	  
+<https://dati.inps.it/sinpson/distribution/CATTEM_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it , "JSON_LD distribution of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it , "This is the distribution in JSON_LD of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> . 
+
+<https://dati.inps.it/sinpson/distribution/CATTEM_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it , "CSV distribution of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione dei temi adottata dall'INPS"@it , "This is the distribution in CSV of the classification of themes adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> .	  
+
+<https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://dati.inps.it/sinpson/vocabolari/temi/adempimenti_fiscali>
+a   skos:Concept ;
+      rdfs:label  "Adempimenti fiscali"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Adempimenti fiscali"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni>
+a   skos:Concept ;
+      rdfs:label  "Assunzioni e Collaborazioni"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/tipo_di_contratto_di_lavoro>, <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_accessorio>, 
+		            <https://dati.inps.it/sinpson/vocabolari/temi/cessazione_del_rapporto_di_lavoro>, <https://dati.inps.it/sinpson/vocabolari/temi/incentivi_alla_assunzione>, 
+					<https://dati.inps.it/sinpson/vocabolari/temi/minimali_di_retribuzione>, <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_sommerso> ;
+      skos:prefLabel "Assunzioni e Collaborazioni"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/banche_dati_ed_elenchi_di_lavoratori>
+a   skos:Concept ;
+      rdfs:label  "Banca dati ed elenco di lavoratori"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Banca dati ed elenco di lavoratori"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/contributi>
+a   skos:Concept ;
+      rdfs:label  "Contributo"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/aliquote_e_calcolo_contributi>, <https://dati.inps.it/sinpson/vocabolari/temi/versamenti_e_f24>, 
+		              <https://dati.inps.it/sinpson/vocabolari/temi/situazione_contributiva>, <https://dati.inps.it/sinpson/vocabolari/temi/totalizzazioni_ricongiunzione_e_riscatto_contributi>, 
+					  <https://dati.inps.it/sinpson/vocabolari/temi/contributi_figurativi>, <https://dati.inps.it/sinpson/vocabolari/temi/compensazioni_e_regolarizzazioni>, 
+					  <https://dati.inps.it/sinpson/vocabolari/temi/sistema_contributivo> ;
+      skos:prefLabel "Contributo"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/deleghe_e_moduli>
+a   skos:Concept ;
+      rdfs:label  "Deleghe e moduli"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Deleghe e moduli"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita>
+a   skos:Concept ;
+      rdfs:label  "Disabilità e inabilità "@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_sorde>, <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_con_disabilita_che_hanno_gia_lavorato_o_prestato_servizio>, 
+		            <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_cieche>, <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_agli_invalidi_civili>, 
+					<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_con_disabilita_e_in_condizioni_di_reddito_ridotto>, <https://dati.inps.it/sinpson/vocabolari/temi/familiari_disabili> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Disabilità e inabilità"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori>
+a   skos:Concept ;
+      rdfs:label  "Disoccupazione, sospensione dal lavoro e salvaguardia lavoratori"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/mobilita>, <https://dati.inps.it/sinpson/vocabolari/temi/indennita_per_disoccupazione>,
+		            <https://dati.inps.it/sinpson/vocabolari/temi/esodati>, <https://dati.inps.it/sinpson/vocabolari/temi/datori_di_lavoro_insolventi>, 
+			     	<https://dati.inps.it/sinpson/vocabolari/temi/cassa_integrazione_guadagni_e_riduzione_orario> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				
+      skos:prefLabel "Disoccupazione, sospensione dal lavoro e salvaguardia lavoratori"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/indennita_speciali_per_lavori_faticosi_o_rischiosi_volontariato_e_donazione_di_sangue_e_midollo>
+a   skos:Concept ;
+      rdfs:label  "Indennità speciali per lavori faticosi o rischiosi volontariato e donazione di sangue e midollo"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Indennità speciali per lavori faticosi o rischiosi volontariato e donazione di sangue e midollo"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/iscrizione_a_fondi_e_gestioni_di_categoria>
+a   skos:Concept ;
+      rdfs:label  "Iscrizione a fondi e gestioni di categoria"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/registro_imprese_e_inizio_attivita>, <https://dati.inps.it/sinpson/vocabolari/temi/fondi_e_gestioni> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Iscrizione a fondi e gestioni di categoria"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/lavoro_domestico>
+a   skos:Concept ;
+      rdfs:label  "Lavoro domestico"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Lavoro domestico"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/lavoro_migrante>
+a   skos:Concept ;
+      rdfs:label  "Lavoro migrante"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/aiuto_supporto_ai_lavoratori_migranti>, <https://dati.inps.it/sinpson/vocabolari/temi/adempimenti_normativa_distacchi_prestazioni_per_lavoratori_migranti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Lavoro migrante"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/malattia_assistenza_cure_soggiorni>
+a   skos:Concept ;
+      rdfs:label  "Malattia,assistenza,cure e soggiorni"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/residenze_e_soggiorni>, <https://dati.inps.it/sinpson/vocabolari/temi/malattia_cura_infortunio>, 
+		            <https://dati.inps.it/sinpson/vocabolari/temi/assistenza_a_persone_non_autosufficienti> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				
+      skos:prefLabel "Malattia,assistenza,cure e soggiorni"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/maternita_paternita_congedi_matrimoniali>
+a   skos:Concept ;
+      rdfs:label  "Maternità, paternità e congedi matrimoniali"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Maternità, paternità e congedi matrimoniali"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/pensioni>
+a   skos:Concept ;
+      rdfs:label  "Pensioni"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/tipi_di_pensione>, <https://dati.inps.it/sinpson/vocabolari/temi/pagamento_delle_pensioni>, 
+		            <https://dati.inps.it/sinpson/vocabolari/temi/maggiorazioni_e_indennita_speciali_per_pensione>, <https://dati.inps.it/sinpson/vocabolari/temi/andare_in_pensione> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				  
+      skos:prefLabel "Pensioni"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/portali_e_altri_strumenti_specialistici>
+a   skos:Concept ;
+      rdfs:label  "Portali e altri strumenti specialistici"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Portali e altri strumenti specialistici"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/temi/previdenza_complementare>
+a   skos:Concept ;
+      rdfs:label  "Previdenza complementare"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Previdenza complementare"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/redditi_e_patrimonio>
+a   skos:Concept ;
+      rdfs:label  "Redditi e patrimonio"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/isee>, <https://dati.inps.it/sinpson/vocabolari/temi/dichiarazione_dei_redditi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Redditi e patrimonio"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni>
+a   skos:Concept ;
+      rdfs:label  "Sgravi fiscali, detrazioni e riduzione delle sanzioni"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_e_agevolazioni_per_pensionati>, <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_e_agevolazioni_per_lavoratori_e_imprese>, 
+		          <https://dati.inps.it/sinpson/vocabolari/temi/riduzioni_e_dilazioni>, <https://dati.inps.it/sinpson/vocabolari/temi/formazione_e_aggiornamento>, 
+		     	  <https://dati.inps.it/sinpson/vocabolari/temi/calamita_pubbliche_ed_eventi_straordinari> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				
+      skos:prefLabel "Sgravi fiscali, detrazioni e riduzione delle sanzioni"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio>
+a   skos:Concept ;
+      rdfs:label  "Sostegno economico e allo studio"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_per_studio_e_formazione>, <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_in_difficolta_economica>, 
+		          <https://dati.inps.it/sinpson/vocabolari/temi/prestiti>, <https://dati.inps.it/sinpson/vocabolari/temi/mutui>, 
+				  <https://dati.inps.it/sinpson/vocabolari/temi/assegni_alla_famiglia> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				
+      skos:prefLabel "Sostegno economico e allo studio"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_ai_superstiti>
+a   skos:Concept ;
+      rdfs:label  "Sostegno ai superstiti"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Sostegno ai superstiti"@it .	
+		
+#######################################################################################################
+#                                              Second level                                           #
+####################################################################################################### 		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/adempimenti_normativa_distacchi_prestazioni_per_lavoratori_migranti>
+a   skos:Concept ;
+      rdfs:label  "Adempimenti,normativa,distacchi e prestazioni per lavoratori migranti"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_migrante> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Adempimenti,normativa,distacchi e prestazioni per lavoratori migranti"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/aiuto_supporto_ai_lavoratori_migranti>
+a   skos:Concept ;
+      rdfs:label  "Aiuto e supporto ai lavoratori migranti"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/lavoro_migrante> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Aiuto e supporto ai lavoratori migranti"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/aliquote_e_calcolo_contributi>
+a   skos:Concept ;
+      rdfs:label  "Aliquote e calcolo contributi"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Aliquote e calcolo contributi"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/andare_in_pensione>
+a   skos:Concept ;
+      rdfs:label  "Andare in pensione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/pensioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Andare in pensione"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/assegni_alla_famiglia>
+a   skos:Concept ;
+      rdfs:label  "Assegni alla famiglia"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Assegni alla famiglia"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/assistenza_a_persone_non_autosufficienti>
+a   skos:Concept ;
+      rdfs:label  "Assistenza a persone non autosufficienti"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/malattia_assistenza_cure_soggiorni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Assistenza a persone non autosufficienti"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/calamita_pubbliche_ed_eventi_straordinari>
+a   skos:Concept ;
+      rdfs:label  "Calamità pubbliche ed eventi straordinari"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Calamità pubbliche ed eventi straordinari"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/cassa_integrazione_guadagni_e_riduzione_orario>
+a   skos:Concept ;
+      rdfs:label  "Cassa Integrazione Guadagni e Riduzione Orario"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Cassa Integrazione Guadagni e Riduzione Orario"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/cessazione_del_rapporto_di_lavoro>
+a   skos:Concept ;
+      rdfs:label  "Cessazione del rapporto di lavoro"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Cessazione del rapporto di lavoro"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/temi/compensazioni_e_regolarizzazioni>
+a   skos:Concept ;
+      rdfs:label  "Compensazioni e regolarizzazioni"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Compensazioni e regolarizzazioni"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/contributi_figurativi>
+a   skos:Concept ;
+      rdfs:label  "Contributi figurativi"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Contributi figurativi"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/datori_di_lavoro_insolventi>
+a   skos:Concept ;
+      rdfs:label  "Datori di lavoro insolventi"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Datori di lavoro insolventi"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/dichiarazione_dei_redditi>
+a   skos:Concept ;
+      rdfs:label  "Dichiarazione dei redditi"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/redditi_e_patrimonio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Dichiarazione dei redditi"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/esodati>
+a   skos:Concept ;
+      rdfs:label  "Esodati"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Esodati"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/familiari_disabili>
+a   skos:Concept ;
+      rdfs:label  "Familiari disabili"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Familiari disabili"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/fondi_e_gestioni>
+a   skos:Concept ;
+      rdfs:label  "Fondi e gestioni"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/iscrizione_a_fondi_e_gestioni_di_categoria> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Fondi e gestioni"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/formazione_e_aggiornamento>
+a   skos:Concept ;
+      rdfs:label  "Formazione e aggiornamento"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Formazione e aggiornamento"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/incentivi_alla_assunzione>
+a   skos:Concept ;
+      rdfs:label  "Incentivi all'assunzione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Incentiviall'assunzione"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/indennita_per_disoccupazione>
+a   skos:Concept ;
+      rdfs:label  "Indennità per disoccupazione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Indennità per disoccupazione"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/isee>
+a   skos:Concept ;
+      rdfs:label  "ISEE"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/redditi_e_patrimonio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "ISEE"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/lavoro_accessorio>
+a   skos:Concept ;
+      rdfs:label  "Lavoro accessorio"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  
+      skos:prefLabel "Lavoro accessorio"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/lavoro_sommerso>
+a   skos:Concept ;
+      rdfs:label  "Lavoro sommerso"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Lavoro sommerso"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/maggiorazioni_e_indennita_speciali_per_pensione>
+a   skos:Concept ;
+      rdfs:label  "Maggiorazioni e indennita speciali per la pensione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/pensioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Maggiorazioni e indennita speciali per la pensione"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/temi/malattia_cura_infortunio>
+a   skos:Concept ;
+      rdfs:label  "Malattia,cura e infortunio"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/malattia_assistenza_cure_soggiorni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Malattia,cura e infortunio"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/mobilita>
+a   skos:Concept ;
+      rdfs:label  "Mobilità"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disoccupazione_sospensione_dal_lavoro_e_salvaguardia_lavoratori> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Mobilità"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/minimali_di_retribuzione>
+a   skos:Concept ;
+      rdfs:label  "Minimali di retribuzione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Minimali di retribuzione"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/mutui>
+a   skos:Concept ;
+      rdfs:label  "Mutui"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Mutui"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/pagamento_delle_pensioni>
+a   skos:Concept ;
+      rdfs:label  "Pagamento delle pensioni"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/pensioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Pagamento delle pensioni"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/prestiti>
+a   skos:Concept ;
+      rdfs:label  "Prestiti"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Prestiti"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/registro_imprese_e_inizio_attivita>
+a   skos:Concept ;
+      rdfs:label  "Registro imprese e inizio attività"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/iscrizione_a_fondi_e_gestioni_di_categoria> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Registro imprese e inizio attività"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/residenze_e_soggiorni>
+a   skos:Concept ;
+      rdfs:label  "Residenze e sogggiorni"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/malattia_assistenza_cure_soggiorni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Residenze e sogggiorni"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/riduzioni_e_dilazioni>
+a   skos:Concept ;
+      rdfs:label  "Riduzioni e dilazioni"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Riduzioni e dilazioni"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sgravi_e_agevolazioni_per_lavoratori_e_imprese>
+a   skos:Concept ;
+      rdfs:label  "Sgravi e agevolazioni per lavoratori e imprese"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sgravi e agevolazioni per lavoratori e imprese"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sgravi_e_agevolazioni_per_pensionati>
+a   skos:Concept ;
+      rdfs:label  "Sgravi e agevolazioni per pensionati"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sgravi_fiscali_detrazionie_riduzione_delle_sanzioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sgravi e agevolazioni per pensionati"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/sistema_contributivo>
+a   skos:Concept ;
+      rdfs:label  "Sistema contributivo"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sistema contributivo"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/situazione_contributiva>
+a   skos:Concept ;
+      rdfs:label  "Situazione contributiva"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Situazione contributiva"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_cieche>
+a   skos:Concept ;
+      rdfs:label  "Sostegno a persone cieche"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno a persone cieche"@it .		
+	
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_con_disabilita_che_hanno_gia_lavorato_o_prestato_servizio>
+a   skos:Concept ;
+      rdfs:label  "Sostegno a persone con disabilità che hanno già lavorato o prestato servizio"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno a persone con disabilità che hanno già lavorato o prestato servizio"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_con_disabilita_e_in_condizioni_di_reddito_ridotto>
+a   skos:Concept ;
+      rdfs:label  "Sostegno a persone con disabilita e in condizioni di reddito ridotto"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno a persone con disabilita e in condizioni di reddito ridotto"@it .			
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_in_difficolta_economica>
+a   skos:Concept ;
+      rdfs:label  "Sostegno a persone in difficoltà economica"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno a persone in difficoltà economica"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_a_persone_sorde>
+a   skos:Concept ;
+      rdfs:label  "Sostegno a persone sorde"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno a persone sorde"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_agli_invalidi_civili>
+a   skos:Concept ;
+      rdfs:label  "Sostegno agli invalidi civili"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/disabilita_e_inabilita> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno agli invalidi civili"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/temi/sostegno_per_studio_e_formazione>
+a   skos:Concept ;
+      rdfs:label  "Sostegno per studio e formazione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/sostegno_economico_e_allo_studio> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sostegno per studio e formazione"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/tipi_di_pensione>
+a   skos:Concept ;
+      rdfs:label  "Tipi di pensione"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/pensioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Tipi di pensione"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/tipo_di_contratto_di_lavoro>
+a   skos:Concept ;
+      rdfs:label  "Tipo di contratto di lavoro"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/assunzioni_e_collaborazioni> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Tipo di contratto di lavoro"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/totalizzazioni_ricongiunzione_e_riscatto_contributi>
+a   skos:Concept ;
+      rdfs:label  "Totalizzazioni, ricongiunzione e riscatto contributi"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Totalizzazioni, ricongiunzione e riscatto contributi"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/temi/versamenti_e_f24>
+a   skos:Concept ;
+      rdfs:label  "Versamenti e F24"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/temi/contributi> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/temi> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Versamenti e F24"@it .		

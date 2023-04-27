@@ -1,0 +1,513 @@
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix sinpson:      <https://dati.inps.it/sinpson/> .
+@prefix inpsvoc:      <https://dati.inps.it/sinpson/vocabolari/> .
+@prefix catdis:       <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sulle classificazione delle categorie di disabilità adottata dall'INPS"@it , "Classification of disability categories adopted by INPS controlled vocabulary"@en ;	  
+      dct:description ""@it , 
+	                  ""@en ;	  	  
+      rdfs:comment ""@it, 
+	               ""@en ;
+      rdfs:label "Vocabolario Controllato sulla classificazione delle categorie di disabilità adottata dall'INPS"@it , "This is the controlled vocabulary of the classification of disability categories adopted by INPS controlled vocabulary"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sulla classificazione delle categorie di disabilità adottata dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "2" ;
+	  ndc:keyConcept "categorie_disabilita" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://dati.inps.it/sinpson/vocabolari/categorie_disabilita" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+      dct:subject <http://eurovoc.europa.eu/3349>, <http://eurovoc.europa.eu/1231>, <http://eurovoc.europa.eu/100212>, <http://eurovoc.europa.eu/1334>, <http://eurovoc.europa.eu/100234>, <http://eurovoc.europa.eu/4559>, <http://eurovoc.europa.eu/100233> ;
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/> ;
+      dcat:keyword "invalido"@it, "cieco"@it , "sordo"@it , "handicap"@it , "disabilità"@it , "disabled person"@en ,  "blind person"@en , "deaf person"@en ,  "handicap"@en , "disability"@en ;  
+      dct:issued "2022-01-10"^^xsd:date ;
+      dct:modified "2023-03-27"^^xsd:date ;
+      owl:versionInfo "0.4" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:publisher <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:relation <https://dati.inps.it/sinpson/vocabolari/categorie_utenza> ;   
+      dct:rightsHolder <https://dati.inps.it/sinpson/organization/inps> ;
+      dcat:contactPoint <https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://dati.inps.it/sinpson/distribution/CATDIS_RDF_TURTLE>, <https://dati.inps.it/sinpson/distribution/CATDIS_JSON_LD>, <https://dati.inps.it/sinpson/distribution/CATDIS_CSV>;
+      skos:hasTopConcept <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/handicap>, 
+	                     <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta>, 
+	                     <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL>, 
+						 <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP>, 
+						 <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra>.
+						 
+#######################################################################################################
+#                                   INPS and standard                                                 #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://dati.inps.it/sinpson/distribution/CATDIS_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie disabilità adottata dall'INPS"@it, "RDF/Turtle distribution of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie di disabilità adottata dall'INPS"@it, "This is the distribution in RDF/turtle of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ;  
+      dcat:accessURL <https://github.com/......> .	 
+
+<https://dati.inps.it/sinpson/distribution/CATDIS_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie disabilità adottata dall'INPS"@it , "JSON_LD distribution of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie di disabilità adottata dall'INPS"@it , "This is the distribution in JSON_LD of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> . 
+
+<https://dati.inps.it/sinpson/distribution/CATDIS_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione delle categorie disabilità adottata dall'INPS"@it , "CSV distribution of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle categorie di disabilità adottata dall'INPS"@it , "This is the distribution in CSV of the classification of disability categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> .	  
+
+<https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile>
+a  skos:Concept ;
+      rdfs:label "Cieco civile"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Cieco civile"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/handicap>
+a  skos:Concept ;
+      rdfs:label "Handicap"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/handicap_con_disabilita_grave> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Handicap"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65>
+a  skos:Concept ;
+      rdfs:label "Invalido civile di età compresa tra 18 e 65 anni "@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Invalido civile di età compresa tra 18 e 65 anni "@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta>
+a  skos:Concept ;
+      rdfs:label "Invalido civile minore di età"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Invalido civile minore di età"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne>
+a  skos:Concept ;
+      rdfs:label "Invalido civile ultrasessantacinquenne"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Invalido civile ultrasessantacinquenne"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL>
+a  skos:Concept ;
+      rdfs:label "Invalido INAIL"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;				
+      skos:prefLabel "Invalido INAIL"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Invalido INPS"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS gestione ex INPDAP"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP_con_disabilita_grave>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Invalido INPS gestione ex INPDAP"@it .			
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile>
+a  skos:Concept ;
+      rdfs:label "Sordo civile"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile_con_disabilita_grave>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Sordo civile"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra>
+a  skos:Concept ;
+      rdfs:label "Trattamento di privilegio ordiario e di guerra"@it ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:narrower <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_non_autosufficiente>, <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_con_disabilita_grave>, 
+	                <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_con_disabilita_media> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+      skos:prefLabel "Trattamento di privilegio ordiario e di guerra"@it .
+
+
+#######################################################################################################
+#                                              Second level                                           #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Cieco civile con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Cieco civile con disabilità grave"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Cieco civile con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Cieco civile con disabilità media"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Cieco civile non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/cieco_civile> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Cieco civile non autosufficiente"@it .
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/handicap_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Handicap con disabilià grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/handicap> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+      skos:prefLabel "Handicap con disabilià grave"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido civile di età compresa tra 18 e 65 anni  con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile di età compresa tra 18 e 65 anni  con disabilità grave"@it .	
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido civile di età compresa tra 18 e 65 anni  con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile di età compresa tra 18 e 65 anni  con disabilità media"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Invalido civile di età compresa tra 18 e 65 anni non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_eta_tra_18_e_65> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile di età compresa tra 18 e 65 anni non autosufficiente"@it .			
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido civile minore di età con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile minore di età con disabilità grave"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido civile minore di età con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile minore di età con disabilità media"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Invalido civile minore di età non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_minore_di_eta> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile minore di età non autosufficiente"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido civile ultrasessantacinquenne con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile ultrasessantacinquenne con disabilità grave"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido civile ultrasessantacinquenne con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile ultrasessantacinquenne con disabilità media"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Invalido civile ultrasessantacinquenne non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_civile_ultrasessantacinquenne> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido civile ultrasessantacinquenne non autosufficiente"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido INAIL con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INAIL con disabilità grave"@it .				
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido INAIL con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INAIL con disabilità media"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Invalido INAIL non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INAIL> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INAIL non autosufficiente"@it .			
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INPS con disabilità grave"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INPS con disabilità media"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS gestione ex INPDAP con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INPS gestione ex INPDAP  con disabilità grave"@it .		
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS gestione ex INPDAP con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_gestione_ex_INPDAP> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INPS gestione ex INPDAP con disabilità media"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Invalido INPS non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/invalido_INPS> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Invalido INPS non autosufficiente"@it .
+		
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Sordo civile con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sordo civile con disabilità grave"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Sordo civile con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/sordo_civile> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Sordo civile con disabilità media"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_con_disabilita_grave>
+a  skos:Concept ;
+      rdfs:label "Trattamento di privilegio ordiario e di guerra con disabilità grave"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Trattamento di privilegio ordiario e di guerra con disabilità grave"@it .	
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_con_disabilita_media>
+a  skos:Concept ;
+      rdfs:label "Trattamento di privilegio ordiario e di guerra con disabilità media"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Trattamento di privilegio ordiario e di guerra con disabilità media"@it .		
+
+<https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra_non_autosufficiente>
+a  skos:Concept ;
+      rdfs:label "Trattamento di privilegio ordiario e di guerra non autosufficiente"@it ;
+      skos:broader <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita/trattamento_di_privilegio_ordinario_e_di_guerra> ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/categorie_disabilita> ;
+	  skos:notation "" ;
+      dct:identifier "" ;	
+      clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+      skos:prefLabel "Trattamento di privilegio ordiario e di guerra non autosufficiente"@it .

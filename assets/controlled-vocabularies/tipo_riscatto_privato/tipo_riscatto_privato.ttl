@@ -1,0 +1,1449 @@
+@prefix dct:         <http://purl.org/dc/terms/> .
+@prefix adms:        <http://www.w3.org/ns/adms#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:         <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:          <http://purl.org/dc/elements/1.1/> .
+@prefix skos:        <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:        <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:        <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:     <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:        <http://www.w3.org/ns/dcat#> .
+@prefix vcard:       <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:    <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:         <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:         <https://w3id.org/italia/onto/COV/> . 
+@prefix sinpson:     <https://dati.inps.it/sinpson/> .
+@prefix inpsvoc:     <https://dati.inps.it/sinpson/vocabolari/> .
+@prefix triscpriv:   <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "Classification of the redemption type for private management adopted by INPS controlled vocabulary"@en ;	  
+      dct:description "Indica il tipo di riscatto per la gestione privata che consente il riconoscimento contributivo per specifici periodi altrimenti privi di contribuzione"@it , 
+	                 "Redemption type for private management that allows contributory recognition for specific periods otherwise without contributions"@en ;
+      rdfs:comment "Indica il tipo di riscatto per la gestione privata che consente il riconoscimento contributivo per specifici periodi altrimenti privi di contribuzione"@it, 
+	              "Redemption type for private management that allows contributory recognition for specific periods otherwise without contributions"@en ;
+      rdfs:label "Vocabolario Controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "This is the controlled vocabulary of the redemption type for private management adopted by INPS classification"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "1" ;
+	  ndc:keyConcept "tipo_riscatto_privato" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>, <http://publications.europa.eu/resource/authority/data-theme/EDUC>, <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+      dct:subject <http://eurovoc.europa.eu/4151>, <http://eurovoc.europa.eu/4099>, <http://eurovoc.europa.eu/4543>, <http://eurovoc.europa.eu/1074>, <http://eurovoc.europa.eu/4106>, <http://eurovoc.europa.eu/104>, <http://eurovoc.europa.eu/5159>  ;
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato> ;
+      dcat:keyword "inps"@it, "pratica di riscatto"@it , "tipo riscatto"@it , "riscatto corso di studi"@it , "riscatto lavoro"@it , "riscatto maternità"@it , "riscatto congedo"@it , "redemption application"@en , "type of redemption"@en ,  "classes redemption"@en, "work redemption"@en, "maternity leave redemption"@en , "leave redemption"@en  ;    
+      dct:issued "2022-12-22"^^xsd:date ;
+      dct:modified "2023-04-20"^^xsd:date ;    
+      owl:versionInfo "0.2" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:publisher <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:relation <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>, <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_pubblico>;   
+      dct:rightsHolder <https://dati.inps.it/sinpson/organization/inps> ;
+      dcat:contactPoint <https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://dati.inps.it/sinpson/distribution/TRISC_RDF_TURTLE>, <https://dati.inps.it/sinpson/distribution/TRISC_JSON_LD>, <https://dati.inps.it/sinpson/distribution/TRISC_CSV> ;
+      skos:hasTopConcept <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/GSLA>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LA>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAAR>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACD>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACM>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACO>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LA247>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAEL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LALS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LASP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LATT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAVL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AEFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AEPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ART9SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/GS51>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LE>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEEL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LELS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LESP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LETT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEVL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FRFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMF>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFEL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFLS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFSP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFTT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFVL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RV>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVAR>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCD>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCM>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCO>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVDI>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVEL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVET>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVGS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVLS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVSP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVTT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVVL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LSU468>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PPF662>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8EL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8FS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8LS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8PT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8SP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8TT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8VL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCV>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVART>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVCDM>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVCOM>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVFS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVGS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVLS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVSP>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVVL>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/REGPT>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/COM662>.
+
+#######################################################################################################
+#                                   INPS and standard                                                #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://dati.inps.it/sinpson/distribution/TRISC_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione RDF/Turtle del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it, "RDF/Turtle distribution of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it, "This is the distribution in RDF/turtle of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ;  
+      dcat:accessURL <https://github.com/......> .
+
+<https://dati.inps.it/sinpson/distribution/TRISC_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "JSON_LD distribution of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "This is the distribution in JSON_LD of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> . 
+
+<https://dati.inps.it/sinpson/distribution/TRISC_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione CSV del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "CSV distribution of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo di riscatto per la gestione privata adottato dall'INPS"@it , "This is the distribution in CSV of the redemption type for private management adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> .	  
+
+<https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/GSLA>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "GSLA" ;
+      dct:identifier "GSLA" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Gestione Separata"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Gestione Separata"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/GS>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LA>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LA" ;
+      dct:identifier "LA" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAAR>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LAAR" ;
+      dct:identifier "LAAR" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Artigiani"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Artigiani"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/A>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACD>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LACD" ;
+      dct:identifier "LACD" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Coltivatori Diretti"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Coltivatori Diretti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/CD>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LACM" ;
+      dct:identifier "LACM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Coloni Mezzadri"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Coloni Mezzadri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/CM>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LACO>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LACO" ;
+      dct:identifier "LACO" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Commercianti"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Commercianti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/C>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LA247>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LA247" ;
+      dct:identifier "LA247" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Inoccupati"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Inoccupati"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/INC>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAEL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LAEL" ;
+      dct:identifier "LAEL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LAFS" ;
+      dct:identifier "LAFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LALS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LALS" ;
+      dct:identifier "LALS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LAPT" ;
+      dct:identifier "LAPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LASP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LASP" ;
+      dct:identifier "LASP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LATT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LATT" ;
+      dct:identifier "LATT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LAVL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LAVL" ;
+      dct:identifier "LAVL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei corsi universitari di studio (art. 2 dlgs 184/97)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AEFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AEFS" ;
+      dct:identifier "AEFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa senza assegni per seguire il coniuge all’estero (art. 3 , c. 2, del DLgs. 184/1997)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa senza assegni per seguire il coniuge all’estero (art. 3 , c. 2, del DLgs. 184/1997)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AEPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AEPT" ;
+      dct:identifier "AEPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa senza assegni per seguire il coniuge all’estero (art. 3 , c. 2, del DLgs. 184/1997)	-	Poste"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa senza assegni per seguire il coniuge all’estero (art. 3 , c. 2, del DLgs. 184/1997)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ART9SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ART9SP" ;
+      dct:identifier "ART9SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto periodi di attività svolta anteriormente all’istituzione dell’assicurazione obbligatoria per l’invalidità la vecchiaia e i superstiti da parte di giocatori, allenatori di calcio e sportivi professionisti (art.9 della legge n.366/1973 e art.9 della legge n.91/1981)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto periodi di attività svolta anteriormente all’istituzione dell’assicurazione obbligatoria per l’invalidità la vecchiaia e i superstiti da parte di giocatori, allenatori di calcio e sportivi professionisti (art.9 della legge n.366/1973 e art.9 della legge n.91/1981)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7" ;
+      dct:identifier "DST7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7EL" ;
+      dct:identifier "DST7EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7FS" ;
+      dct:identifier "DST7FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7LS" ;
+      dct:identifier "DST7LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7PT" ;
+      dct:identifier "DST7PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7SP" ;
+      dct:identifier "DST7SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7TT" ;
+      dct:identifier "DST7TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/DST7VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "DST7VL" ;
+      dct:identifier "DST7VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei periodi intercorrenti tra un rapporto di lavoro e l’altro nel caso di lavori discontinui, stagionali, temporanei (art.7 del D. Lgs. n.654/1996)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/GS51>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "GS51" ;
+      dct:identifier "GS51" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di attività prestata con rapporto di collaborazione coordinata e continuativa ante 01 aprile 1996 (art.51 della legge n.488/1999)	-	Gestione Separata"@it ;
+      skos:prefLabel "Riscatto dei periodi di attività prestata con rapporto di collaborazione coordinata e continuativa ante 01 aprile 1996 (art.51 della legge n.488/1999)	-	Gestione Separata"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/GS>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5" ;
+      dct:identifier "ISL5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5EL" ;
+      dct:identifier "ISL5EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5FS" ;
+      dct:identifier "ISL5FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5LS" ;
+      dct:identifier "ISL5LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5PT" ;
+      dct:identifier "ISL5PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5SP" ;
+      dct:identifier "ISL5SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5TT" ;
+      dct:identifier "ISL5TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/ISL5VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "ISL5VL" ;
+      dct:identifier "ISL5VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei periodi di interruzione o sospensione del rapporto di lavoro (art.5 del D. Lgs. n.564/1996)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LE>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LE" ;
+      dct:identifier "LE" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEEL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LEEL" ;
+      dct:identifier "LEEL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LEFS" ;
+      dct:identifier "LEFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LELS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LELS" ;
+      dct:identifier "LELS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LEPT" ;
+      dct:identifier "LEPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LESP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LESP" ;
+      dct:identifier "LESP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LETT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LETT" ;
+      dct:identifier "LETT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LEVL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LEVL" ;
+      dct:identifier "LEVL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei periodi di lavoro subordinato compiuti all'estero (art. 51, comma 2 della legge 30 aprile 1969, n. 153, come modificato dall'art. 2-octies del decreto-legge 2 marzo 1974, n. 30, convertito, con modificazioni, dalla legge 16 aprile 1974, n. 114, e art. 3, comma 1, del decreto legislativo 30 aprile 1997, n. 184)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FRFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FRFS" ;
+      dct:identifier "FRFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio prestato in qualità di dipendente statale non di ruolo senza iscrizione all’Assicurazione Generale Obbligatoria (art. 14 e 15 del DPR 1092/1973)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto del servizio prestato in qualità di dipendente statale non di ruolo senza iscrizione all’Assicurazione Generale Obbligatoria (art. 14 e 15 del DPR 1092/1973)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503" ;
+      dct:identifier "A503" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio prestato in qualità di dipendente statale non di ruolo senza iscrizione all’Assicurazione Generale Obbligatoria (art. 14 e 15 del DPR 1092/1973)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto del servizio prestato in qualità di dipendente statale non di ruolo senza iscrizione all’Assicurazione Generale Obbligatoria (art. 14 e 15 del DPR 1092/1973)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503EL" ;
+      dct:identifier "A503EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503FS" ;
+      dct:identifier "A503FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503LS" ;
+      dct:identifier "A503LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503PT" ;
+      dct:identifier "A503PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503SP" ;
+      dct:identifier "A503SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503TT" ;
+      dct:identifier "A503TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/A503VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "A503VL" ;
+      dct:identifier "A503VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei periodi di assenza facoltativa per maternità collocati al di fuori del rapporto di lavoro (art. 35 comma 5, D.Lgs. 151/2001)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5" ;
+      dct:identifier "CF5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5EL" ;
+      dct:identifier "CF5EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5FS" ;
+      dct:identifier "CF5FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5LS" ;
+      dct:identifier "CF5LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5PT" ;
+      dct:identifier "CF5PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Poste"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5SP" ;
+      dct:identifier "CF5SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5TT" ;
+      dct:identifier "CF5TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/CF5VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "CF5VL" ;
+      dct:identifier "CF5VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Volo"@it ;
+      skos:prefLabel "Riscatto del periodo di congedo per la formazione (art.5, comma 5, legge n.53/2000)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMF>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMF" ;
+      dct:identifier "AMF" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFEL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFEL" ;
+      dct:identifier "AMFEL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFFS" ;
+      dct:identifier "AMFFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFLS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFLS" ;
+      dct:identifier "AMFLS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFPT" ;
+      dct:identifier "AMFPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Poste"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFSP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFSP" ;
+      dct:identifier "AMFSP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFTT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFTT" ;
+      dct:identifier "AMFTT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/AMFVL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "AMFVL" ;
+      dct:identifier "AMFVL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Volo"@it ;
+      skos:prefLabel "Riscatto di periodi di aspettativa per gravi motivi di famiglia (art.4, comma 2, legge n.53/2000 e art. 1, comma 789, legge 27 dicembre 2006 n. 296)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6" ;
+      dct:identifier "FP6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6EL" ;
+      dct:identifier "FP6EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6FS" ;
+      dct:identifier "FP6FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6LS" ;
+      dct:identifier "FP6LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6PT" ;
+      dct:identifier "FP6PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Poste"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6SP" ;
+      dct:identifier "FP6SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6TT" ;
+      dct:identifier "FP6TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/FP6VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "FP6VL" ;
+      dct:identifier "FP6VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Volo"@it ;
+      skos:prefLabel "Riscatto del periodo di formazione professionale, di studio o di ricerca e di inserimento nel mercato del lavoro (art.6 legge n.564/1996)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RV>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RV" ;
+      dct:identifier "RV" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVAR>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVAR" ;
+      dct:identifier "RVAR" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Artigiani"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Artigiani"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/A>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCD>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVCD" ;
+      dct:identifier "RVCD" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Coltivatori Diretti"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Coltivatori Diretti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/CD>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVCM" ;
+      dct:identifier "RVCM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Coloni Mezzadri"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Coloni Mezzadri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/CM>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVCO>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVCO" ;
+      dct:identifier "RVCO" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Commercianti"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Commercianti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/C>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVDI>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVDI" ;
+      dct:identifier "RVDI" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Industriali"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Industriali"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/IND>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVEL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVEL" ;
+      dct:identifier "RVEL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVET>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVET" ;
+      dct:identifier "RVET" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	ex Inpdai"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	ex Inpdai"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/INPDAI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVFS" ;
+      dct:identifier "RVFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVGS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVGS" ;
+      dct:identifier "RVGS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Gestione Separata"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Gestione Separata"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/GS>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVLS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVLS" ;
+      dct:identifier "RVLS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVPT" ;
+      dct:identifier "RVPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Poste"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVSP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVSP" ;
+      dct:identifier "RVSP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVTT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVTT" ;
+      dct:identifier "RVTT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/RVVL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "RVVL" ;
+      dct:identifier "RVVL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Volo"@it ;
+      skos:prefLabel "Riscatto per costituzione di rendita vitalizia riversibile di contributi omessi o caduti in prescrizione (art. 13 legge 12 agosto 1962, n. 1338)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/LSU468>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "LSU468" ;
+      dct:identifier "LSU468" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di occupazione in lavori socialmente utili ai fini della misura delle pensioni (art.8, comma 19, D.Lgs. n. 468/1997)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei periodi di occupazione in lavori socialmente utili ai fini della misura delle pensioni (art.8, comma 19, D.Lgs. n. 468/1997)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PPF662>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PPF662" ;
+      dct:identifier "PPF662" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto degli anni di praticantato effettuati dai promotori finanziari (art. 1, c. 198 legge n.662/96)	-	Commercianti"@it ;
+      skos:prefLabel "Riscatto degli anni di praticantato effettuati dai promotori finanziari (art. 1, c. 198 legge n.662/96)	-	Commercianti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/C>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8" ;
+      dct:identifier "PTV8" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8EL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8EL" ;
+      dct:identifier "PTV8EL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Elettrici"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Elettrici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/E>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8FS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8FS" ;
+      dct:identifier "PTV8FS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8LS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8LS" ;
+      dct:identifier "PTV8LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8PT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8PT" ;
+      dct:identifier "PTV8PT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Poste"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8SP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8SP" ;
+      dct:identifier "PTV8SP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8TT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8TT" ;
+      dct:identifier "PTV8TT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Telefonici"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Telefonici"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/T>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/PTV8VL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "PTV8VL" ;
+      dct:identifier "PTV8VL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Volo"@it ;
+      skos:prefLabel "Riscatto dei periodi di non attività connessi a rapporti di lavoro prestato con contratto a part-time (art.8 del D. Lgs. n.564/1996)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCV>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCV" ;
+      dct:identifier "SCV" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LDAGO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVART>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVART" ;
+      dct:identifier "SCVART" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Artigiani"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Artigiani"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/A>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVCDM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVCDM" ;
+      dct:identifier "SCVCDM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Coltivatori Diretti e Coloni Mezzadri"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Coltivatori Diretti e Coloni Mezzadri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/CDCM>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVCOM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVCOM" ;
+      dct:identifier "SCVCOM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Commercianti"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Commercianti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/C>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVFS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVFS" ;
+      dct:identifier "SCVFS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Ferrovieri"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Ferrovieri"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/F>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVGS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVGS" ;
+      dct:identifier "SCVGS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Gestione Separata"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Gestione Separata"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/GS>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVLS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVLS" ;
+      dct:identifier "SCVLS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori dello Spettacolo"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori dello Spettacolo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSO>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVPT" ;
+      dct:identifier "SCVPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Poste"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVSP>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVSP" ;
+      dct:identifier "SCVSP" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori Sportivi"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Lavoratori Sportivi"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/LSI>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/SCVVL>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "SCVVL" ;
+      dct:identifier "SCVVL" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Volo"@it ;
+      skos:prefLabel "Riscatto del servizio civile nazionale su base volontaria, successivo al 1 gennaio 2009 (art.4, comma 2, del decreto n.185/2008, così come convertito in legge n.2/2009) e del servizio civile universale su base volontaria (art.17, quarto comma, del decreto legislativo n. 40/2017)	-	Volo"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/V>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/REGPT>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "REGPT" ;
+      dct:identifier "REGPT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto della decorrenza giuridica ed economica del servizio prestato IN RUOLO (art. 8 e 142 del D.P.R. 1092/1973) nel Fondo Poste	-	Poste"@it ;
+      skos:prefLabel "Riscatto della decorrenza giuridica ed economica del servizio prestato IN RUOLO (art. 8 e 142 del D.P.R. 1092/1973) nel Fondo Poste	-	Poste"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/P>.
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato/COM662>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;		
+      skos:notation "COM662" ;
+      dct:identifier "COM662" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Riscatto dei periodi prescritti presentata da soggetti per i quali l'obbligo contributivo nella gestione degli esercenti attività commerciali è insorto dal 1° gennaio 1997 (art.1, comma 207, della legge 23 dicembre 1996, n. 662)	-	Commercianti"@it ;
+      skos:prefLabel "Riscatto dei periodi prescritti presentata da soggetti per i quali l'obbligo contributivo nella gestione degli esercenti attività commerciali è insorto dal 1° gennaio 1997 (art.1, comma 207, della legge 23 dicembre 1996, n. 662)	-	Commercianti"@it ;
+      skos:related <https://dati.inps.it/sinpson/vocabolari/fondo_riscatto/C>.
+	  

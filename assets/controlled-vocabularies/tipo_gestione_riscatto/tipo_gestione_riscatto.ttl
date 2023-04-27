@@ -1,0 +1,296 @@
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:  <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:      <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:      <https://w3id.org/italia/onto/COV/> .
+@prefix sinpson:  <https://dati.inps.it/sinpson/> .
+@prefix inpsvoc:  <https://dati.inps.it/sinpson/vocabolari/> .
+@prefix trisc:    <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "Controlled vocabulary of the management type of a redemption application adopted by INPS "@en ;	  
+      dct:description "Indica il tipo di gestione in cui si intende riscattare il periodo"@it , 
+	                 "Type of management in which the period is to be redeemed"@en ;	  	  
+      rdfs:comment "Indica il tipo di gestione in cui si intende riscattare il periodo"@it, 
+	              "Type of management in which the period is to be redeemed"@en ;
+      rdfs:label "Vocabolario Controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "This is the controlled vocabulary of the management type of a redemption application adopted by INPS"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "1" ;
+	  ndc:keyConcept "tipo_gestione_riscatto" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+      dct:subject <http://eurovoc.europa.eu/100236>, <http://eurovoc.europa.eu/100212>, <http://eurovoc.europa.eu/2784>  ;
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto> ;
+      dcat:keyword ""@it, ""@it , ""@it , ""@it , ""@it , ""@it , ""@it , ""@en , ""@en , ""@en , ""@en , ""@en  ;    
+      dct:issued "2022-12-22"^^xsd:date ;
+      dct:modified "2023-04-20"^^xsd:date ;
+      owl:versionInfo "0.2" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:publisher <https://dati.inps.it/sinpson/organization/inps> ;
+      dct:relation <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_pubblico>, <https://dati.inps.it/sinpson/vocabolari/tipo_riscatto_privato>;   
+      dct:rightsHolder <https://dati.inps.it/sinpson/organization/inps> ;
+      dcat:contactPoint <https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://dati.inps.it/sinpson/distribution/TRISC_RDF_TURTLE>, <https://dati.inps.it/sinpson/distribution/TRISC_JSON_LD>, <https://dati.inps.it/sinpson/distribution/TRISC_CSV> ;
+      skos:hasTopConcept <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/GS>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LDAGO>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/A>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CD>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CM>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/C>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/INC>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/E>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/F>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LSO>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/P>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/T>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/V>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LSI>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/IND>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/INPDAI>,
+                         <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CDCM>.
+
+
+
+#######################################################################################################
+#                                   INPS and standard                                                #
+#######################################################################################################
+
+<https://dati.inps.it/sinpson/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://dati.inps.it/sinpson/distribution/TRISC_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione RDF/Turtle del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it, "RDF/Turtle distribution of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it, "This is the distribution in RDF/turtle of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ;  
+      dcat:accessURL <https://github.com/......> .
+
+<https://dati.inps.it/sinpson/distribution/TRISC_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "JSON_LD distribution of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "This is the distribution in JSON_LD of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> . 
+
+<https://dati.inps.it/sinpson/distribution/TRISC_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione CSV del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "CSV distribution of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo di gestione di una pratica di riscatto adottato dall'INPS"@it , "This is the distribution in CSV of the management type of a redemption application adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/.....> ; 
+      dcat:accessURL <https://github.com/......> .	  
+
+<https://dati.inps.it/sinpson/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/GS>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "GS" ;
+      dct:identifier "GS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Gestione Separata" ;
+      skos:prefLabel "Gestione Separata".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LDAGO>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "LDAGO" ;
+      dct:identifier "LDAGO" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria" ;
+      skos:prefLabel "Lavoratori Dipendenti dell'Assicurazione Generale Obbligatoria".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/A>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "A" ;
+      dct:identifier "A" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Artigiani" ;
+      skos:prefLabel "Artigiani".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CD>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "CD" ;
+      dct:identifier "CD" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Coltivatori Diretti" ;
+      skos:prefLabel "Coltivatori Diretti".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "CM" ;
+      dct:identifier "CM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Coloni Mezzadri" ;
+      skos:prefLabel "Coloni Mezzadri".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/C>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "C" ;
+      dct:identifier "C" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Commercianti" ;
+      skos:prefLabel "Commercianti".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/INC>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "I" ;
+      dct:identifier "I" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Inoccupati" ;
+      skos:prefLabel "Inoccupati".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/E>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "E" ;
+      dct:identifier "E" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Elettrici" ;
+      skos:prefLabel "Elettrici".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/F>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "F" ;
+      dct:identifier "F" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ferrovieri" ;
+      skos:prefLabel "Ferrovieri".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LSO>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "LS" ;
+      dct:identifier "LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoratori dello Spettacolo" ;
+      skos:prefLabel "Lavoratori dello Spettacolo".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/P>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "P" ;
+      dct:identifier "P" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Poste" ;
+      skos:prefLabel "Poste".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/T>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "T" ;
+      dct:identifier "T" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telefonici" ;
+      skos:prefLabel "Telefonici".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/V>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "V" ;
+      dct:identifier "V" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo" ;
+      skos:prefLabel "Volo".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/LSI>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "LS" ;
+      dct:identifier "LS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoratori Sportivi" ;
+      skos:prefLabel "Lavoratori Sportivi".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/IND>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "I" ;
+      dct:identifier "I" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Industriali" ;
+      skos:prefLabel "Industriali".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/INPDAI>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "INPDAI" ;
+      dct:identifier "INPDAI" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "ex Inpdai" ;
+      skos:prefLabel "ex Inpdai".
+
+<https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto/CDCM>
+a  	skos:Concept ;
+      skos:inScheme <https://dati.inps.it/sinpson/vocabolari/tipo_gestione_riscatto>;
+      skos:notation "CDCM" ;
+      dct:identifier "CDCM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Coltivatori Diretti e Coloni Mezzadri" ;
+      skos:prefLabel "Coltivatori Diretti e Coloni Mezzadri".
+
+
+
