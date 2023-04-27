@@ -44,7 +44,7 @@ components:
       required:
       - id_lavoratore_domestico
       properties:
-        id_datore_lavoro_domestico:
+        id_lavoratore_domestico:
           $ref: "#/components/schemas/IdLavoratoreDomestico"
       example:
-        id_datore_lavoro_domestico: '216879'
+        id_lavoratore_domestico: '216879'

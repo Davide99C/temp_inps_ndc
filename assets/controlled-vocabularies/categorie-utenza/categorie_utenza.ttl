@@ -1,0 +1,664 @@
+@prefix dct:          <http://purl.org/dc/terms/> .
+@prefix adms:         <http://www.w3.org/ns/adms#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:           <http://purl.org/dc/elements/1.1/> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:         <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:         <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:      <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:         <http://www.w3.org/ns/dcat#> .
+@prefix vcard:        <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit:     <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:          <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:          <https://w3id.org/italia/onto/COV/> .
+@prefix op21:         <https://w3id.org/italia/onto/OP21/> .
+@prefix inpsvoc:      <https://w3id.org/italia/controlled-vocabulary/OP21/> .
+@prefix utenzaliv1:   <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/> .
+@prefix utenzaliv2:   <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "Classification of user categories adopted by INPS controlled vocabulary"@en ;	  
+      dct:description "Classificazione delle categorie di utenza adottata dall'INPS"@it , 
+	                  "Classification of user categories adopted by INPS"@en ;	  	  
+      rdfs:comment "Classificazione delle categorie di utenza adottata dall'INPS"@it, 
+	               "Classification of user categories adopted by INPS"@en ;
+      rdfs:label "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the controlled vocabulary of the classification of user categories adopted by INPS controlled vocabulary"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "2" ;
+	  ndc:keyConcept "categorie_utenza" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI> ;
+      dct:subject <http://eurovoc.europa.eu/100212>, <http://eurovoc.europa.eu/100236> ; 
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      dcat:keyword "utente"@it, "ente"@it , "azienda"@it , "lavoratore"@it , "intermediario"@it , "medico"@it , "pensionato"@it , "disoccupato"@it, "user"@en ,  "organization"@en , "company"@en ,  "worker"@en ,  "intermediary"@en , "doctor"@en , "pensioner"@en , "unemployed"@en  ; 
+      dct:issued "2022-01-10"^^xsd:date ;
+      dct:modified "2023-04-27"^^xsd:date ;
+      owl:versionInfo "0.4" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dct:publisher <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_disabilita> ; 
+      dct:rightsHolder <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dcat:contactPoint <https://w3id.org/italia/data/OP21/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://w3id.org/italia/data/OP21/distribution/CATUT_RDF_TURTLE>, <https://w3id.org/italia/data/OP21/distribution/CATUT_JSON_LD>, <https://w3id.org/italia/data/OP21/distribution/CATUT_CSV>;
+      skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/BIF>, 
+	                     <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/D>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/EEPP>,
+						 <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC>, 
+						 <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/LM>, 
+						 <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/MASL>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/P>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> .
+						 
+#######################################################################################################
+#                                   INPS and standard                                                 #
+#######################################################################################################
+
+<https://w3id.org/italia/data/OP21/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/OP21/distribution/CATUT_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it, "RDF/Turtle distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it, "This is the distribution in RDF/turtle of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/categorie-utenza/categorie_utenza.ttl> ;  
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/categorie-utenza> .	  
+	  
+<https://w3id.org/italia/data/OP21/distribution/CATUT_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "JSON_LD distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the distribution in JSON_LD of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/categorie-utenza/categorie_utenza.json> ; 
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/categorie-utenza> . 
+
+<https://w3id.org/italia/data/OP21/distribution/CATUT_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title	"Distribuzione CSV del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "CSV distribution of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sulla classificazione delle categorie di utenza adottata dall'INPS"@it , "This is the distribution in CSV of the classification of user categories adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/categorie-utenza/categorie_utenza.csv> ; 
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/categorie-utenza> .		  
+
+<https://w3id.org/italia/data/OP21/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DLD>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PA>, 
+			        <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/A>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AA>, 
+					<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/IE>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASMV> ;
+	  skos:notation "AEDL" ;
+      dct:identifier "AEDL" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Aziende, enti e datori di lavoro"@it ;
+      skos:prefLabel "Aziende, enti e datori di lavoro"@it .
+	  
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/BIF>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:notation "BIF" ;
+      dct:identifier "BIF" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Banca e intermediario finanziario"@it ;
+      skos:prefLabel "Banca e intermediario finanziario"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/D>
+a   skos:Concept ;
+      skos:altLabel "Lavoratore sospeso"@it , "Inoccupato"@it ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:notation "D" ;
+      dct:identifier "D" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Disoccupato"@it ;
+      skos:prefLabel "Disoccupato"@it .	
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/EEPP>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:notation "EEPP" ;
+      dct:identifier "EEPP" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ente erogatore di prestazioni previdenziali, consolato e altra autorità locale"@it ;
+      skos:prefLabel "Ente erogatore di prestazioni previdenziali, consolato e altra autorità locale"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/G>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/FS>, 
+	                <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/FSUP>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ANZ> ;
+      skos:notation "F" ;
+      dct:identifier "F" ;	
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;		
+      rdfs:label "Famiglia"@it ;
+      skos:prefLabel "Famiglia"@it .	  
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PATR>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CL>, 
+	                <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CAF>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASSCAT> ;
+	  skos:notation "IC" ;
+      dct:identifier "IC" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Intermediari e consulenti"@it ;
+      skos:prefLabel "Intermediari e consulenti"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LD>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LMPSV>, 
+	                <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/SP>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AC>, 
+				    <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AMSLS>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DP>, 
+				    <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/MC>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AGR>, 
+				    <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DPB>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DAI>, 
+				    <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LIGS>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CC> ;
+      skos:notation "L" ;
+      dct:identifier "L" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Lavoratore"@it ;
+	  skos:prefLabel "Lavoratore"@it .
+	  
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/LM>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CSI>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LP_UE>, 
+	                <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LP_EX_UE> ;
+	  skos:notation "LM" ;
+      dct:identifier "LM" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;		
+	  rdfs:label "Lavoratore migrante"@it ;
+      skos:prefLabel "Lavoratore migrante"@it .		  
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/MASL>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/MCC>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASL> ;
+      skos:notation "MASL" ;
+      dct:identifier "MASL" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Medici e ASL"@it ;
+	  skos:prefLabel "Medici e ASL"@it .	
+	  
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/P>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PIT>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PEST> ;
+	  skos:notation "P" ;
+      dct:identifier "P" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Pensionato"@it ;
+      skos:prefLabel "Pensionato"@it .	  
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+      skos:narrower <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PM>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/S>, 
+	                <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/INV>, <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DIS>, 
+				    <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/C> ;
+      skos:notation "PDI" ;
+      dct:identifier "PDI" ;
+	  clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Persone con disabilità e invalidità"@it ;
+	  skos:prefLabel "Persone con disabilità e invalidità"@it .
+
+#######################################################################################################
+#                                              Second level                                           #
+####################################################################################################### 	  
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AGR>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "AGR" ;
+      dct:identifier "AGR" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Agricolo"@it ;
+      skos:prefLabel "Agricolo"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ANZ>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F> ;
+	  skos:notation "ANZ" ;
+      dct:identifier "ANZ" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Anziano"@it ;
+      skos:prefLabel "Anziano"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AC>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "AC" ;
+      dct:identifier "AC" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Artigiano e commerciante"@it ;
+      skos:prefLabel "Artigiano e commerciante"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AMSLS>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "AMSLS" ;
+      dct:identifier "AMSLS" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Artista, musicista, scrittore e lavoratore dello spettacolo"@it ;
+      skos:prefLabel "Artista, musicista, scrittore e lavoratore dello spettacolo"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASL>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/MASL> ;
+	  skos:notation "ASL" ;
+      dct:identifier "ASL" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "ASL"@it ;
+      skos:prefLabel "ASL"@it .		
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASSCAT>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC> ;
+	  skos:notation "ASSCAT" ;
+      dct:identifier "ASSCAT" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Associazione di categoria e sindacato"@it ;
+      skos:prefLabel "Associazione di categoria e sindacato"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/A>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "A" ;
+      dct:identifier "A" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda"@it ;
+      skos:prefLabel "Azienda"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/AA>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "AA" ;
+      dct:identifier "AA" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda agricola"@it ;
+      skos:prefLabel "Azienda agricola"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/ASMV>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "ASMV" ;
+      dct:identifier "ASMV" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Azienda del settore marittimo e volo"@it ;
+      skos:prefLabel "Azienda del settore marittimo e volo"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CAF>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC> ;
+	  skos:notation "CAF" ;
+      dct:identifier "CAF" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "CAF"@it ;
+      skos:prefLabel "CAF"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CC>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "CC" ;
+      dct:identifier "CC" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Casalinga e casalingo"@it ;
+      skos:prefLabel "Casalinga e casalingo"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/C>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> ;
+	  skos:notation "C" ;
+      dct:identifier "C" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Cieco"@it ;
+      skos:prefLabel "Cieco"@it .		
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CSI>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/LM> ;
+	  skos:notation "CSI" ;
+      dct:identifier "CSI" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Cittadino straniero in Italia"@it ;
+      skos:prefLabel "Cittadino straniero in Italia"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/CL>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC> ;
+	  skos:notation "CL" ;
+      dct:identifier "CL" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Consulente del lavoro e professionista"@it ;
+      skos:prefLabel "Consulente del lavoro e professionista"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DLD>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "DLD" ;
+      dct:identifier "DLD" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Datore di lavoro domestico"@it ;
+      skos:prefLabel "Datore di lavoro domestico"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DP>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "DP" ;
+      dct:identifier "DP" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dipendente privato"@it ;
+      skos:prefLabel "Dipendente privato"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DPB>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "DPB" ;
+      dct:identifier "DPB" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dipendente pubblico"@it ;
+      skos:prefLabel "Dipendente pubblico"@it .		
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DAI>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "DAI" ;
+      dct:identifier "DAI" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Dirigente aziendale e industriale"@it ;
+      skos:prefLabel "Dirigente aziendale e industriale"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/DIS>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> ;
+	  skos:notation "DIS" ;
+      dct:identifier "DIS" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Disabile"@it ;
+      skos:prefLabel "Disabile"@it .				
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/FSUP>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F> ;
+	  skos:notation "FSUP" ;
+      dct:identifier "FSUP" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Familiare superstite"@it ;
+      skos:prefLabel "Familiare superstite"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/FS>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F> ;
+	  skos:notation "FS" ;
+      dct:identifier "FS" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Figlio e studente"@it ;
+      skos:prefLabel "Figlio e studente"@it .		
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/G>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/F> ;
+	  skos:notation "G" ;
+      dct:identifier "G" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Genitore"@it ;
+      skos:prefLabel "Genitore"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/IE>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "IE" ;
+      dct:identifier "IE" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Impresa edile"@it ;
+      skos:prefLabel "Impresa edile"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/INV>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> ;
+	  skos:notation "INV" ;
+      dct:identifier "INV" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Invalido"@it ;
+      skos:prefLabel "Invalido"@it .			
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LD>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "LD" ;
+      dct:identifier "LD" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore domestico"@it ;
+      skos:prefLabel "Lavoratore domestico"@it .			
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LIGS>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "LIGS" ;
+      dct:identifier "LIGS" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore iscritto alla Gestione Separata"@it ;
+      skos:prefLabel "Lavoratore iscritto alla Gestione Separata"@it .		
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LMPSV>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "LMPSV" ;
+      dct:identifier "LMPSV" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore marittimo, pescatore e settore volo"@it ;
+      skos:prefLabel "Lavoratore marittimo, pescatore e settore volo"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LP_EX_UE>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/LM> ;
+	  skos:notation "LP_EX_UE" ;
+      dct:identifier "LP_EX_UE" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore in Paese extra UE convenzionato"@it ;
+      skos:prefLabel "Lavoratore in Paese extra UE convenzionato"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/LP_UE>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/LM> ;
+	  skos:notation "LP_UE" ;
+      dct:identifier "LP_UE" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Lavoratore in Paese UE"@it ;
+      skos:prefLabel "Lavoratore in Paese UE"@it .		
+	
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/MCC>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/MASL> ;
+	  skos:notation "MCC" ;
+      dct:identifier "MCC" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Medico curante e certificatore"@it ;
+      skos:prefLabel "Medico curante e certificatore"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/MC>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "MC" ;
+      dct:identifier "MC" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Ministro di culto"@it ;
+      skos:prefLabel "Ministro di culto"@it .
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PATR>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/IC> ;
+	  skos:notation "PATR" ;
+      dct:identifier "PATR" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Patronato"@it ;
+      skos:prefLabel "Patronato"@it .	
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PEST>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/P> ;
+	  skos:notation "PEST" ;
+      dct:identifier "PEST" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pensionato che vive all'estero"@it ;
+      skos:prefLabel "Pensionato che vive all'estero"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PIT>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/P> ;
+	  skos:notation "PIT" ;
+      dct:identifier "PIT" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pensionato che vive in Italia"@it ;
+      skos:prefLabel "Pensionato che vive in Italia"@it .			
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PM>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> ;
+	  skos:notation "PM" ;
+      dct:identifier "PM" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Persona con malattia e difficoltà di salute"@it ;
+      skos:prefLabel "Persona con malattia e difficoltà di salute"@it .
+		
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/PA>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/AEDL> ;
+	  skos:notation "PA" ;
+      dct:identifier "PA" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Pubblica amministrazione"@it ;
+      skos:prefLabel "Pubblica amministrazione"@it .	
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/S>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/PDI> ;
+	  skos:notation "S" ;
+      dct:identifier "S" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sordo"@it ;
+      skos:prefLabel "Sordo"@it .		
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello2/SP>
+a   skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza> ;
+	  skos:broader <https://w3id.org/italia/controlled-vocabulary/OP21/categorie_utenza/livello1/L> ;
+	  skos:notation "SP" ;
+      dct:identifier "SP" ;
+	  clvapit:hasRankOrder "2" ;
+      xkos:depth 2 ;
+	  rdfs:label "Sportivo"@it ;
+      skos:prefLabel "Sportivo"@it .	

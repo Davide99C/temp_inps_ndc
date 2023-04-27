@@ -1,0 +1,1495 @@
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix adms:     <http://www.w3.org/ns/adms#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc:       <http://purl.org/dc/elements/1.1/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix xkos:     <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix clvapit:  <https://w3id.org/italia/onto/CLV/> .
+@prefix dcat:     <http://www.w3.org/ns/dcat#> .
+@prefix vcard:    <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix ndc:      <https://w3id.org/italia/onto/NDC/> .
+@prefix cov:      <https://w3id.org/italia/onto/COV/> .
+@prefix op21:     <https://w3id.org/italia/onto/OP21/> .
+@prefix inpsvoc:  <https://w3id.org/italia/controlled-vocabulary/OP21/> .
+@prefix tcontr:   <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/> .
+
+
+#Metadata DCAT-AP_IT for the controlled vocabulary
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>
+      a     adms:Asset, dcat:Dataset, skos:ConceptScheme ;
+      dct:title "Vocabolario Controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "Classification of the aggregation type adopted by INPS controlled vocabulary"@en ;	  
+      dct:description "Indica il tipo di ricongiunzione che consente, a chi ha posizioni assicurative in gestioni previdenziali diverse, di riunire, mediante trasferimento, tutti i periodi contributivi presso un’unica gestione, allo scopo di ottenere una sola pensione"@it , 
+	                  "Aggregation type that allows, for those who have insurance positions in different social security managements, to combine, by transfer, all the contribution periods in a single management, in order to obtain a single pension"@en ;	  	  
+      rdfs:comment "Indica il tipo di ricongiunzione che consente, a chi ha posizioni assicurative in gestioni previdenziali diverse, di riunire, mediante trasferimento, tutti i periodi contributivi presso un’unica gestione, allo scopo di ottenere una sola pensione"@it, 
+	               "Aggregation type that allows, for those who have insurance positions in different social security managements, to combine, by transfer, all the contribution periods in a single management, in order to obtain a single pension"@en ;
+      rdfs:label "Vocabolario Controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "This is the controlled vocabulary of the aggregation type adopted by INPS classification"@en ; 	  
+      skos:prefLabel "Vocabolario Controllato sul tipo di ricongiunzione adottato dall'INPS"@it ;	  	  
+      dct:type <http://purl.org/adms/assettype/CodeList> ;	
+      xkos:numberOfLevels "1" ;
+	  ndc:keyConcept "tipo_ricongiunzione" ;
+	  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS> ;	  
+	  dct:identifier "https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione" ;
+      dcat:theme <http://publications.europa.eu/resource/authority/data-theme/SOCI>;
+      dct:subject <http://eurovoc.europa.eu/100236>, <http://eurovoc.europa.eu/100212> ;
+      dct:conformsTo <https://w3id.org/italia/data/standard/SKOS> ;	
+      dct:language <http://publications.europa.eu/resource/authority/language/ITA> ;	  
+      rdfs:isDefinedBy <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione> ;
+      dcat:keyword "contributo"@it, "inps"@it , "pratica di ricongiunzione"@it , "contribution"@en , "aggregation application"@en;    
+      dct:issued "2022-12-22"^^xsd:date ;
+      dct:modified "2023-04-27"^^xsd:date ;
+      owl:versionInfo "0.3" ;
+	  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG> ;
+      dct:creator <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dct:publisher <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dct:relation <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_gestione_ricongiunzione>;   
+      dct:rightsHolder <https://w3id.org/italia/data/OP21/organization/inps> ;
+      dcat:contactPoint <https://w3id.org/italia/data/OP21/organization/DirezioneCentraleTII> ;                               
+      dcat:distribution <https://w3id.org/italia/data/OP21/distribution/TCON_RDF_TURTLE>, <https://w3id.org/italia/data/OP21/distribution/TCON_JSON_LD>, <https://w3id.org/italia/data/OP21/distribution/TCON_CSV> ;
+      skos:hasTopConcept <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/333>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR0>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR1>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR2>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR3>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR4>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR5>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR6>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EA7>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/ER3>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/401>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/402>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/403>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/511>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/606>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/618>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/628>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/638>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/639>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/648>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/658>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/668>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/670>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/686>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/774>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/775>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/797>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/804>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IF2>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IF3>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR7>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/788>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/799>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IRC>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/794>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/818>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAB>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAF>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAH>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB1>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB2>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB5>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB6>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB7>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB9>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EDS>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EIM>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EMT>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EH0>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/MAT>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/PAR>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/DIS>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/123>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/126>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/136>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/159>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/297>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/298>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/300>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/301>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/302>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/303>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/304>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/307>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/309>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/310>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/314>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/315>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/319>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/320>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/321>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/322>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/329>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/350>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/351>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/352>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/359>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/370>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/371>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/375>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/376>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/378>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/379>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/380>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/382>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/386>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/388>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/389>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/555>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/556>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/557>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/601>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/603>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/611>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/613>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/621>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/623>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/631>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/633>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/643>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/653>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/663>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/674>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/675>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/683>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/698>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/699>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/769>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/781>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/791>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/808>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/809>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/858>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/865>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/873>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/882>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/897>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/898>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/920>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/924>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IMA>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I20>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I21>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I22>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I23>,
+                         <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I24>.
+
+
+	
+#######################################################################################################
+#                                   INPS and standard                                                 #
+#######################################################################################################
+
+<https://w3id.org/italia/data/OP21/organization/inps>
+a   dcatapit:Agent , foaf:Agent ;
+      dct:identifier "inps" ;
+      foaf:name "Istituto Nazionale della Previdenza Sociale"@it ,
+                "National Institute for Social Security"@en .
+
+<https://w3id.org/italia/data/standard/SKOS>
+a   dcatapit:Standard, dct:Standard ;
+      dct:identifier "SKOS" ;
+      dct:title "Simple Knowledge Organization System - SKOS" ;
+      dct:description "The Simple Knowledge Organization System (SKOS) is a common data model for sharing and linking knowledge organization systems via the Web" .
+
+<https://w3id.org/italia/data/OP21/distribution/TCON_RDF_TURTLE>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title"Distribuzione RDF/Turtle del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it, "RDF/Turtle distribution of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it, "This is the distribution in RDF/turtle of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/tipo-ricongiunzione/tipo_ricongiunzione.ttl> ;  
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/tipo-ricongiunzione> .
+
+<https://w3id.org/italia/data/OP21/distribution/TCON_JSON_LD>
+a   dcatapit:Distribution, dcat:Distribution ;
+      dct:title "Distribuzione JSON_LD del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "JSON_LD distribution of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione JSON_LD del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "This is the distribution in JSON_LD of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/JSON_LD> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/tipo-ricongiunzione/tipo_ricongiunzione.json> ; 
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/tipo-ricongiunzione> . 
+
+<https://w3id.org/italia/data/OP21/distribution/TCON_CSV>
+a	dcatapit:Distribution, dcat:Distribution ;
+      dct:title"Distribuzione CSV del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "CSV distribution of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:description "Questa è la distribuzione CSV del vocabolario controllato sul tipo di ricongiunzione adottato dall'INPS"@it , "This is the distribution in CSV of the aggregation type adopted by INPS controlled vocabulary"@en ;
+      dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
+      dct:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40> ;
+      dcat:downloadURL <https://raw.githubusercontent.com/INPS-it/NDC/main/assets/controlled-vocabularies/tipo-ricongiunzione/tipo_ricongiunzione.csv> ; 
+      dcat:accessURL <https://github.com/INPS-it/NDC/tree/main/assets/controlled-vocabularies/tipo-ricongiunzione> .	  
+
+<https://w3id.org/italia/data/OP21/organization/DirezioneCentraleTII> 
+a dcatapit:Organization, vcard:Kind, vcard:Organization ;
+     vcard:fn "Direzione Centrale Tecnologia, Informatica e Innovazione" ;      
+     vcard:hasEmail <mailto:dc.tecnologiainformaticaeinnovazione@postacert.inps.gov.it> .
+
+#######################################################################################################
+#                         Definition of the controlled vocabulary - First level                       #
+####################################################################################################### 
+  
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/333>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "333" ;
+      dct:identifier "333" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Disoccupazione"@it ;
+      skos:prefLabel "Disoccupazione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR0>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR0" ;
+      dct:identifier "IR0" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione L.29/79"@it ;
+      skos:prefLabel "Ricongiunzione L.29/79"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR1>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR1" ;
+      dct:identifier "IR1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione Art. 2, L. 29/79"@it ;
+      skos:prefLabel "Ricongiunzione Art. 2, L. 29/79"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR2>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR2" ;
+      dct:identifier "IR2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione Art. 6, L. 29/79"@it ;
+      skos:prefLabel "Ricongiunzione Art. 6, L. 29/79"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR3>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR3" ;
+      dct:identifier "IR3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricong. L. 303/74"@it ;
+      skos:prefLabel "Ricong. L. 303/74"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR4>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR4" ;
+      dct:identifier "IR4" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione Art.1 L.45/90"@it ;
+      skos:prefLabel "Ricongiunzione Art.1 L.45/90"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR5>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR5" ;
+      dct:identifier "IR5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione L. 523/54"@it ;
+      skos:prefLabel "Ricongiunzione L. 523/54"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR6>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR6" ;
+      dct:identifier "IR6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiunzione D.P.R. 1092/73"@it ;
+      skos:prefLabel "Ricongiunzione D.P.R. 1092/73"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EA7>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EA7" ;
+      dct:identifier "EA7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Ricong. INPS"@it ;
+      skos:prefLabel "P.A.L.S. Ricong. INPS"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/ER3>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "ER3" ;
+      dct:identifier "ER3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Ricongiunzione"@it ;
+      skos:prefLabel "P.A.L.S. Ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/401>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "401" ;
+      dct:identifier "401" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiun. L.45/90 CD/CM"@it ;
+      skos:prefLabel "Ricongiun. L.45/90 CD/CM"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/402>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "402" ;
+      dct:identifier "402" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiun. L.45/90 ART"@it ;
+      skos:prefLabel "Ricongiun. L.45/90 ART"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/403>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "403" ;
+      dct:identifier "403" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ricongiun. L.45/90 COM"@it ;
+      skos:prefLabel "Ricongiun. L.45/90 COM"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/511>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "511" ;
+      dct:identifier "511" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "E.C. periodo ricongiunto"@it ;
+      skos:prefLabel "E.C. periodo ricongiunto"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/606>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "606" ;
+      dct:identifier "606" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Elett. ricongiunzione"@it ;
+      skos:prefLabel "Elett. ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/618>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "618" ;
+      dct:identifier "618" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Autofer. ricongiunzione"@it ;
+      skos:prefLabel "Autofer. ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/628>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "628" ;
+      dct:identifier "628" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telefon. ricongiunzione"@it ;
+      skos:prefLabel "Telefon. ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/638>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "638" ;
+      dct:identifier "638" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo ricongiun. definit."@it ;
+      skos:prefLabel "Volo ricongiun. definit."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/639>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "639" ;
+      dct:identifier "639" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo ricongiun. in corso"@it ;
+      skos:prefLabel "Volo ricongiun. in corso"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/648>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "648" ;
+      dct:identifier "648" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Dazieri ricongiunzione"@it ;
+      skos:prefLabel "Dazieri ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/658>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "658" ;
+      dct:identifier "658" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Esattor. ricongiunzione"@it ;
+      skos:prefLabel "Esattor. ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/668>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "668" ;
+      dct:identifier "668" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Gas ricongiunzione"@it ;
+      skos:prefLabel "Gas ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/670>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "670" ;
+      dct:identifier "670" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Autofer.ricongiunzione"@it ;
+      skos:prefLabel "Autofer.ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/686>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "686" ;
+      dct:identifier "686" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fondo FS ricongiunzione"@it ;
+      skos:prefLabel "Fondo FS ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/774>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "774" ;
+      dct:identifier "774" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. ricongiunzione"@it ;
+      skos:prefLabel "P.T. ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/775>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "775" ;
+      dct:identifier "775" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T.ricong.Casse Profes."@it ;
+      skos:prefLabel "P.T.ricong.Casse Profes."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/797>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "797" ;
+      dct:identifier "797" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T.Ricong.L29/79 Tesoro"@it ;
+      skos:prefLabel "P.T.Ricong.L29/79 Tesoro"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/804>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "804" ;
+      dct:identifier "804" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "D.I. Ricongiunzione"@it ;
+      skos:prefLabel "D.I. Ricongiunzione"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IF2>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IF2" ;
+      dct:identifier "IF2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo fittizio da Ricong. L.29/79 manuale"@it ;
+      skos:prefLabel "Periodo fittizio da Ricong. L.29/79 manuale"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IF3>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IF3" ;
+      dct:identifier "IF3" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo fittizio da Ricong. L.45/90 manuale"@it ;
+      skos:prefLabel "Periodo fittizio da Ricong. L.45/90 manuale"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IR7>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IR7" ;
+      dct:identifier "IR7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo ricongiunto prevalente"@it ;
+      skos:prefLabel "Periodo ricongiunto prevalente"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/788>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "788" ;
+      dct:identifier "788" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. Computo L.1092/73"@it ;
+      skos:prefLabel "P.T. Computo L.1092/73"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/799>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "799" ;
+      dct:identifier "799" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T.Computi L1092 Tesoro"@it ;
+      skos:prefLabel "P.T.Computi L1092 Tesoro"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IRC>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IRC" ;
+      dct:identifier "IRC" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Computo DPR 1092/73"@it ;
+      skos:prefLabel "Computo DPR 1092/73"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/794>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "794" ;
+      dct:identifier "794" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. Indenn. preavviso   "@it ;
+      skos:prefLabel "P.T. Indenn. preavviso   "@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/818>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "818" ;
+      dct:identifier "818" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "D.I. Indenn. preavviso"@it ;
+      skos:prefLabel "D.I. Indenn. preavviso"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAB>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EAB" ;
+      dct:identifier "EAB" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. cong. parentali"@it ;
+      skos:prefLabel "P.A.L.S. cong. parentali"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAF>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EAF" ;
+      dct:identifier "EAF" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Maternita' e congedi"@it ;
+      skos:prefLabel "P.A.L.S. Maternita' e congedi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EAH>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EAH" ;
+      dct:identifier "EAH" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Congedi assist.Hand."@it ;
+      skos:prefLabel "P.A.L.S. Congedi assist.Hand."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB1>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB1" ;
+      dct:identifier "EB1" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Fig. C.I.G."@it ;
+      skos:prefLabel "P.A.L.S. Fig. C.I.G."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB2>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB2" ;
+      dct:identifier "EB2" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Fig.Car.Elett."@it ;
+      skos:prefLabel "P.A.L.S. Fig.Car.Elett."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB5>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB5" ;
+      dct:identifier "EB5" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Fig. Forze Arm."@it ;
+      skos:prefLabel "P.A.L.S. Fig. Forze Arm."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB6>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB6" ;
+      dct:identifier "EB6" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Figur. Disoccup"@it ;
+      skos:prefLabel "P.A.L.S. Figur. Disoccup"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB7>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB7" ;
+      dct:identifier "EB7" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Maternita'"@it ;
+      skos:prefLabel "P.A.L.S. Maternita'"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EB9>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EB9" ;
+      dct:identifier "EB9" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Malattia"@it ;
+      skos:prefLabel "P.A.L.S. Malattia"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EDS>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EDS" ;
+      dct:identifier "EDS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Donaz. sangue"@it ;
+      skos:prefLabel "P.A.L.S. Donaz. sangue"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EIM>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EIM" ;
+      dct:identifier "EIM" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Malattia e/o infortunio"@it ;
+      skos:prefLabel "P.A.L.S. Malattia e/o infortunio"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EMT>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EMT" ;
+      dct:identifier "EMT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Maternita' e congedi"@it ;
+      skos:prefLabel "P.A.L.S. Maternita' e congedi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/EH0>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "EH0" ;
+      dct:identifier "EH0" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.A.L.S. Mat /congedi int"@it ;
+      skos:prefLabel "P.A.L.S. Mat /congedi int"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/MAT>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "MAT" ;
+      dct:identifier "MAT" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativi maternita'"@it ;
+      skos:prefLabel "Figurativi maternita'"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/PAR>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "PAR" ;
+      dct:identifier "PAR" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativi congedi"@it ;
+      skos:prefLabel "Figurativi congedi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/DIS>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "DIS" ;
+      dct:identifier "DIS" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativi DIS-COLL"@it ;
+      skos:prefLabel "Figurativi DIS-COLL"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/123>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "123" ;
+      dct:identifier "123" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa Esodo"@it ;
+      skos:prefLabel "Figurativa Esodo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/126>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "126" ;
+      dct:identifier "126" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa Esodo"@it ;
+      skos:prefLabel "Figurativa Esodo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/136>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "136" ;
+      dct:identifier "136" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fig. integr. (L.191/09)"@it ;
+      skos:prefLabel "Fig. integr. (L.191/09)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/159>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "159" ;
+      dct:identifier "159" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Agric.giorn.integr.malat"@it ;
+      skos:prefLabel "Agric.giorn.integr.malat"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/297>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "297" ;
+      dct:identifier "297" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Proroga Figurativa NASpI"@it ;
+      skos:prefLabel "Proroga Figurativa NASpI"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/298>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "298" ;
+      dct:identifier "298" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Contr.Figurativa NASpI"@it ;
+      skos:prefLabel "Contr.Figurativa NASpI"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/300>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "300" ;
+      dct:identifier "300" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa"@it ;
+      skos:prefLabel "Figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/301>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "301" ;
+      dct:identifier "301" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa utile p. anz."@it ;
+      skos:prefLabel "Figurativa utile p. anz."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/302>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "302" ;
+      dct:identifier "302" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ctr. Figurativa per ASpI"@it ;
+      skos:prefLabel "Ctr. Figurativa per ASpI"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/303>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "303" ;
+      dct:identifier "303" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ctr.Figur. per mini-ASpI"@it ;
+      skos:prefLabel "Ctr.Figur. per mini-ASpI"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/304>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "304" ;
+      dct:identifier "304" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Ctr.Figur.Mini-ASpI 2012"@it ;
+      skos:prefLabel "Ctr.Figur.Mini-ASpI 2012"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/307>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "307" ;
+      dct:identifier "307" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Mater./pater. ad int."@it ;
+      skos:prefLabel "Mater./pater. ad int."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/309>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "309" ;
+      dct:identifier "309" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa ad integraz."@it ;
+      skos:prefLabel "Figurativa ad integraz."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/310>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "310" ;
+      dct:identifier "310" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Malattia e/o infortunio"@it ;
+      skos:prefLabel "Malattia e/o infortunio"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/314>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "314" ;
+      dct:identifier "314" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Infortunio invalidante"@it ;
+      skos:prefLabel "Infortunio invalidante"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/315>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "315" ;
+      dct:identifier "315" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Malattia extra rapp.lav."@it ;
+      skos:prefLabel "Malattia extra rapp.lav."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/319>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "319" ;
+      dct:identifier "319" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Malattia/infort.(ad int)"@it ;
+      skos:prefLabel "Malattia/infort.(ad int)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/320>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "320" ;
+      dct:identifier "320" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Maternita'/Ast.facoltat."@it ;
+      skos:prefLabel "Maternita'/Ast.facoltat."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/321>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "321" ;
+      dct:identifier "321" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Mater./pater. L.53/2000"@it ;
+      skos:prefLabel "Mater./pater. L.53/2000"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/322>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "322" ;
+      dct:identifier "322" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Maternita' e congedi"@it ;
+      skos:prefLabel "Maternita' e congedi"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/329>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "329" ;
+      dct:identifier "329" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Mater/pater/congedi(Int)"@it ;
+      skos:prefLabel "Mater/pater/congedi(Int)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/350>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "350" ;
+      dct:identifier "350" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Malattia specifica"@it ;
+      skos:prefLabel "Malattia specifica"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/351>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "351" ;
+      dct:identifier "351" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Maternita' obbligatoria"@it ;
+      skos:prefLabel "Maternita' obbligatoria"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/352>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "352" ;
+      dct:identifier "352" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Maternita' facoltativa"@it ;
+      skos:prefLabel "Maternita' facoltativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/359>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "359" ;
+      dct:identifier "359" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Malattia specifica (Int)"@it ;
+      skos:prefLabel "Malattia specifica (Int)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/370>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "370" ;
+      dct:identifier "370" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fig.carica pubbl/sindac."@it ;
+      skos:prefLabel "Fig.carica pubbl/sindac."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/371>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "371" ;
+      dct:identifier "371" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa  carica sind."@it ;
+      skos:prefLabel "Figurativa  carica sind."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/375>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "375" ;
+      dct:identifier "375" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figur.post p.time L.300"@it ;
+      skos:prefLabel "Figur.post p.time L.300"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/376>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "376" ;
+      dct:identifier "376" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figur.post p.time L.300"@it ;
+      skos:prefLabel "Figur.post p.time L.300"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/378>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "378" ;
+      dct:identifier "378" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Donaz. Midollo (integr.)"@it ;
+      skos:prefLabel "Donaz. Midollo (integr.)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/379>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "379" ;
+      dct:identifier "379" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fig.Car.Pub/Sind.(int.)"@it ;
+      skos:prefLabel "Fig.Car.Pub/Sind.(int.)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/380>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "380" ;
+      dct:identifier "380" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Donazione midollo"@it ;
+      skos:prefLabel "Donazione midollo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/382>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "382" ;
+      dct:identifier "382" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Elett. mater.ante fondo"@it ;
+      skos:prefLabel "Elett. mater.ante fondo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/386>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "386" ;
+      dct:identifier "386" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telef. mater. ante fondo"@it ;
+      skos:prefLabel "Telef. mater. ante fondo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/388>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "388" ;
+      dct:identifier "388" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo matern. ante fondo"@it ;
+      skos:prefLabel "Volo matern. ante fondo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/389>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "389" ;
+      dct:identifier "389" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Donaz.sangue (ad integ.)"@it ;
+      skos:prefLabel "Donaz.sangue (ad integ.)"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/555>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "555" ;
+      dct:identifier "555" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "malattia marittima"@it ;
+      skos:prefLabel "malattia marittima"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/556>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "556" ;
+      dct:identifier "556" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "malat. specif.marittima"@it ;
+      skos:prefLabel "malat. specif.marittima"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/557>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "557" ;
+      dct:identifier "557" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "maternita' marittima"@it ;
+      skos:prefLabel "maternita' marittima"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/601>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "601" ;
+      dct:identifier "601" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Elettrici figurativa"@it ;
+      skos:prefLabel "Elettrici figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/603>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "603" ;
+      dct:identifier "603" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Elettrici figurativa"@it ;
+      skos:prefLabel "Elettrici figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/611>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "611" ;
+      dct:identifier "611" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Autofer. figurativa"@it ;
+      skos:prefLabel "Autofer. figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/613>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "613" ;
+      dct:identifier "613" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Autofer. figurativa"@it ;
+      skos:prefLabel "Autofer. figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/621>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "621" ;
+      dct:identifier "621" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telefonici figurativa"@it ;
+      skos:prefLabel "Telefonici figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/623>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "623" ;
+      dct:identifier "623" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telefonici figurativa"@it ;
+      skos:prefLabel "Telefonici figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/631>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "631" ;
+      dct:identifier "631" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo figurativa"@it ;
+      skos:prefLabel "Volo figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/633>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "633" ;
+      dct:identifier "633" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Volo figurativa"@it ;
+      skos:prefLabel "Volo figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/643>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "643" ;
+      dct:identifier "643" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Dazieri figurativa"@it ;
+      skos:prefLabel "Dazieri figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/653>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "653" ;
+      dct:identifier "653" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Esattoriali figurativa"@it ;
+      skos:prefLabel "Esattoriali figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/663>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "663" ;
+      dct:identifier "663" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Gas figurativa"@it ;
+      skos:prefLabel "Gas figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/674>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "674" ;
+      dct:identifier "674" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telef. mater./ast.facolt"@it ;
+      skos:prefLabel "Telef. mater./ast.facolt"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/675>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "675" ;
+      dct:identifier "675" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Telef.malattia specifica"@it ;
+      skos:prefLabel "Telef.malattia specifica"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/683>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "683" ;
+      dct:identifier "683" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fondo FS figurativa"@it ;
+      skos:prefLabel "Fondo FS figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/698>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "698" ;
+      dct:identifier "698" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa Esodo"@it ;
+      skos:prefLabel "Figurativa Esodo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/699>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "699" ;
+      dct:identifier "699" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Figurativa Esodo"@it ;
+      skos:prefLabel "Figurativa Esodo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/769>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "769" ;
+      dct:identifier "769" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. figurativa"@it ;
+      skos:prefLabel "P.T. figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/781>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "781" ;
+      dct:identifier "781" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. riscatto maternita'"@it ;
+      skos:prefLabel "P.T. riscatto maternita'"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/791>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "791" ;
+      dct:identifier "791" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "P.T. Accr. maternita'"@it ;
+      skos:prefLabel "P.T. Accr. maternita'"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/808>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "808" ;
+      dct:identifier "808" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "D.I. Trasf. figurativa"@it ;
+      skos:prefLabel "D.I. Trasf. figurativa"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/809>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "809" ;
+      dct:identifier "809" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "D.I. Trasf.malatt/infort"@it ;
+      skos:prefLabel "D.I. Trasf.malatt/infort"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/858>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "858" ;
+      dct:identifier "858" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Estero:maternita'obblig."@it ;
+      skos:prefLabel "Estero:maternita'obblig."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/865>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "865" ;
+      dct:identifier "865" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Estero:figurat.generico"@it ;
+      skos:prefLabel "Estero:figurat.generico"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/873>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "873" ;
+      dct:identifier "873" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Estero:malattia"@it ;
+      skos:prefLabel "Estero:malattia"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/882>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "882" ;
+      dct:identifier "882" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Estero figurat. generico"@it ;
+      skos:prefLabel "Estero figurat. generico"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/897>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "897" ;
+      dct:identifier "897" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Proroga FigNASpI FondoSp"@it ;
+      skos:prefLabel "Proroga FigNASpI FondoSp"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/898>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "898" ;
+      dct:identifier "898" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Contr.Fig.NASpI FondoSp."@it ;
+      skos:prefLabel "Contr.Fig.NASpI FondoSp."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/920>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "920" ;
+      dct:identifier "920" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fig.ass.L335/95 Art1 c40A"@it ;
+      skos:prefLabel "Fig.ass.L335/95 Art1 c40A"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/924>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "924" ;
+      dct:identifier "924" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Fig.ass.L335/95 Art1 c40B"@it ;
+      skos:prefLabel "Fig.ass.L335/95 Art1 c40B"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/IMA>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "IMA" ;
+      dct:identifier "IMA" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Maternita D.Lgs.151/01 Art.25"@it ;
+      skos:prefLabel "Maternita D.Lgs.151/01 Art.25"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I20>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "I20" ;
+      dct:identifier "I20" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Accredito figurativo"@it ;
+      skos:prefLabel "Accredito figurativo"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I21>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "I21" ;
+      dct:identifier "I21" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo accr.fig. ast. maternita'/paternita' con contr. ridotto"@it ;
+      skos:prefLabel "Periodo accr.fig. ast. maternita'/paternita' con contr. ridotto"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I22>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "I22" ;
+      dct:identifier "I22" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo di accredito figurativo per carica elettiva"@it ;
+      skos:prefLabel "Periodo di accredito figurativo per carica elettiva"@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I23>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "I23" ;
+      dct:identifier "I23" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo di accredito figurativo per mandato sindacale parz."@it ;
+      skos:prefLabel "Periodo di accredito figurativo per mandato sindacale parz."@it.
+
+<https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione/I24>
+a  	skos:Concept ;
+      skos:inScheme <https://w3id.org/italia/controlled-vocabulary/OP21/tipo_ricongiunzione>;
+      skos:notation "I24" ;
+      dct:identifier "I24" ;
+      clvapit:hasRankOrder "1" ;
+      xkos:depth 1 ;
+	  rdfs:label "Periodo di accredito figurativo per mandato sindacale tot."@it ;
+      skos:prefLabel "Periodo di accredito figurativo per mandato sindacale tot."@it.
+
+	  
+

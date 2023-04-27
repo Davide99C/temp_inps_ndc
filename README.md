@@ -11,31 +11,11 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 
 ```bash
 ┌─ assets/controlled-vocabularies/
-│  ├─ categorie-disabilita
-│  │  └─ categorie-disabilita.ttl
-│  ├─ categorie-temi
-│  │  └─ categorie-temi.ttl
-│  ├─ categorie-moduli
-│  │  └─ categorie-moduli.ttl
-│  ├─ categorie-utenza
-│  │  └─ categorie-utenza.ttl
-│  ├─ tipo_gestione_ricongiunzione
-│  │  └─ tipo_gestione_ricongiunzione.ttl
-│  ├─ tipo_gestione_riscatto
-│  │  └─ tipo_gestione_riscatto.ttl
-│  ├─ tipo_ricongiunzione
-│  │  └─ tipo_ricongiunzione.ttl
-│  ├─ tipo_riscatto_privato
-│  │  └─ tipo_riscatto_privato.ttl
-│  ├─ tipo_riscatto_pubblico
-│  │  └─ tipo_riscatto_pubblico.ttl
-│  └─ frame-short.yamlld
-│  └─ notes.md
+│  └─ ...
 ├─ assets/ontologies/
-│  ├─ procedura21-30-12-2022
-│  │  └─ procedura21-30-12-2022.ttl
-│  ├─ procedura21-31-03-2023
-│  │  └─ procedura21-31-03-2023.ttl
+│  ├─ procedura21
+│  └─ procedura21-{data} 
+│      └─ procedura21-{data}.ttl
 ├─ assets/schemas/
 │  ├─ contratto-di-lavoro
 │  │  └─ contratto-di-lavoro.oas3.yaml
