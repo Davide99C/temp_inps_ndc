@@ -14,7 +14,7 @@ I file presenti in questo repository sono organizzati secondo la seguente albera
 │  └─ ...
 ├─ assets/ontologies/
 │  ├─ procedura21
-│  └─ procedura21-{data} 
+│  └─ procedura21-{data}
 │      └─ procedura21-{data}.ttl
 ├─ assets/schemas/
 │  ├─ contratto-di-lavoro
