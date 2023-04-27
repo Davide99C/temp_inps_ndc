@@ -21,7 +21,7 @@ tags: []
 components:
   schemas:
     OrdinePagamento:
-     $ref: "https://raw.githubusercontent.com/Davide99C/temp_inps_ndc/main/assets/schemas/ordine-pagamento/ordine-pagamento.oas3.yaml"
+     $ref: "https://raw.githubusercontent.com/Davide99C/temp_inps_ndc/main/assets/schemas/ordine-pagamento/ordine-pagamento.oas3.yaml#/components/schemas/OrdinePagamento/example"
     IdEsitoPagamento:
       type: string
       description:
